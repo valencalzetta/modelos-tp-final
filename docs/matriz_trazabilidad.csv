@@ -1,0 +1,13 @@
+id,concepto,fuente,regla_del_modelo,referencia_interna,verificacion,experimentos,evidencia
+T01,Sistema y frontera,B1; T clases 1-2,Clientes desde llegada a pagar hasta salida; entradas del entorno,Secciones 4-7,Revisión de alcance y diccionario,Todas,Reglas y resultados trazables
+T02,Datos y variabilidad,B1/B2; T clase 3,Distribuciones y dependencias declaradas,Sección 8; S05-S09/S17,"Rangos, unidades y muestras",E3/E4,Entradas reproducibles y sensibilidad
+T03,Eventos discretos,B2 clase 4; T clase 4,Calendario conserva estado entre eventos,Sección 9,Casos manuales y eventos simultáneos,Todas,Traza de eventos
+T04,Colas y capacidad,B2 clase 5; T clase 5,5 cajas; personal limita capacidad; prioridad no expropiativa,Secciones 6/9; S01/S10/S13,Sin superposición ni exceso de capacidad,E1/E2,"P95 espera, utilización y horas"
+T05,Monte Carlo,B2 clase 6; T clase 6,Semanas independientes y entradas comunes entre alternativas,Sección 13,Reproducibilidad y separación de flujos,Todas,Resultados por réplica e intervalos
+T06,Viabilidad y riesgo,B2 clase 7; T clase 7,"Personal, costos y contingencias",Secciones 12/15,Factibilidad de agendas y perturbaciones,E5,"Degradación, recuperación y costo"
+T07,Diseño experimental,B3 clase 8; T clase 8,Factores y niveles controlados; referencia 5/4/3,Sección 12,Comparaciones con igual demanda y personal,E1/E2/E3,Tabla de alternativas
+T08,Sensibilidad,B3 clase 9; T clase 9,Uno por vez e interacciones,Secciones 8/12,Rangos plausibles y variantes identificadas,E4/E6,"Umbrales, robustez y valor de información"
+T09,Verificación y validación,B3 clase 10; T clase 10,"Casos manuales, invariantes y contraste independiente",Sección 14,Pruebas por mecanismo; validación real pendiente,Todas,Expediente de evidencia
+T10,Predicción,B3 clase 11,No entrenar sin datos; escenarios como entrada actual,Sección 16,Si se incorpora: baseline y partición temporal,Extensión futura,Justificación de pertinencia
+T11,Comunicación y defensa,Consigna oral; plantilla B3 clases 15-16,Recomendación condicionada y límites,Secciones 13/15/17,Cada afirmación vinculada a resultados,Todas,"Informe, reproducibilidad y defensa"
+T12,"Redes, híbridos y gemelos",Plantilla B3 clases 12-14 vacía,Tratamiento sujeto a teoría y requisitos completos,Sección 16; S23,Revisión de consigna y pertinencia,Pendiente,No afirmar una cobertura no documentada

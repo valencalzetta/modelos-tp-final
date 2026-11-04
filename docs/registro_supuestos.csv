@@ -1,0 +1,24 @@
+id,tema,valor_o_regla,origen,estado,implicacion
+S01,Capacidad física,5 cajas instaladas,Decisión de usuaria,Definido,Toda política debe respetar el máximo; reemplaza B2 y niveles incompatibles de B3
+S02,Apertura,8 a 22; 14 horas,B2/B3; conciliación de inconsistencia,Definido para el diseño,No son 12 horas
+S03,Horizonte,7 días con vaciado diario,B2/B3; precisión de diseño,Definido para el diseño,Registrar sobretiempo e inviabilidad si invade siguiente apertura
+S04,Referencia de capacidad,5/4/3 por mañana/tarde/noche,B3,Propuesto como referencia,No equivale a una operación real observada ni garantiza cumplimiento
+S05,Llegadas normales,1; 0.8; 0.5 clientes/min,B2,Supuesto heredado,Tiempos entre llegadas exponenciales por franja
+S06,Promoción,Miércoles; multiplicador 1.4,B2/B3,Supuesto heredado,Escenarios 1.2 y 1.6 sobre la tasa normal
+S07,Productos,Uniforme discreta 1 a 40,B2,Supuesto heredado,Revisar distribución y dependencia por promoción
+S08,Pago,30% efectivo; 70% tarjeta/QR,B2,Supuesto heredado,Agrupación de tarjeta y QR
+S09,Atención,0.15 min/producto + 1 min digital o 2 efectivo,B2,Supuesto heredado,Sin incidencias en referencia documental
+S10,Cola principal,Única con prioridad no expropiativa y FIFO dentro de categoría,B2/B3,Definido para el diseño,No confundir FIFO con orden de finalización
+S11,Proporción prioritaria,Sin valor,B1/B2/B3 sin cuantificación,Pendiente,No copiar el 20% usado en prácticas
+S12,Caja rápida,Límite 10; exclusiva y flexible como políticas distintas,B2/B3; precisión de diseño,Definido para el diseño,Usa una de las cinco cajas y mismo personal al comparar
+S13,Personal,"Agendas, turnos, pausas y reemplazos sin cuantificar",B1/B2 y alcance integrado,Pendiente,Capacidad efectiva condicionada a personal presente
+S14,Incidencias de pago,Sin probabilidades ni demoras definidas,B2 menciona; B3 excluye en referencia,Pendiente para escenario,"Definir ocupación de caja, reintentos y salida"
+S15,Abandono,Desactivado en referencia; extensión pendiente,B2/B3,Supuesto heredado y extensión,No estimar ventas perdidas sin modelo y datos
+S16,Velocidad de cajeros,Igual en referencia,B3,Supuesto heredado,Heterogeneidad pendiente de parametrizar
+S17,Dependencias,Independencia condicional en referencia,Propuesta de diseño,Propuesto,Contrastar especialmente promoción-canasta
+S18,Objetivo de espera,P95 < 10 min por día y franja de llegada,B2/B3; precisión de cohorte,Definido para el diseño,Calcular espera y tiempo total por separado
+S19,Réplicas,Piloto de 30; final según precisión,B3 más teoría T,Propuesto,La estabilización visual no garantiza precisión
+S20,Confianza y cumplimiento,90% de confianza como opción; meta de semanas sin fijar,Ejemplo oral y propuesta de diseño,Pendiente,No confundir confianza con probabilidad de cumplimiento
+S21,Costos,Horas de cajero; montos unitarios sin datos,B2/B3 y propuesta,Pendiente para dinero,Contabilizar sobretiempo y restricciones de jornada
+S22,Calibración,Sin observaciones reales disponibles en los bloques,B2/B3,Limitación documentada,Tickets no bastan para medir espera en fila
+S23,Teoría posterior,Apuntes disponibles hasta clase 10; plantilla posterior incompleta,T y B3,Pendiente si se exige cobertura,"No asumir requisitos de redes, híbridos o gemelos digitales"
