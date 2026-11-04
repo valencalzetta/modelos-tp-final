@@ -1,7 +1,7 @@
 # Modelo conceptual integrado: operación de cajas de un supermercado
 
 Versión 0.1 - 4 de noviembre de 2026.
-Estado: especificación conceptual para revisión, previa a la implementación.
+Estado: especificación conceptual v0.1 conservada como fundamento. Implementación disponible en `supermercado/`; supuestos de ejecución y diferencias en `implementacion.md`.
 No contiene resultados de simulación ni una recomendación experimental ya demostrada.
 
 ## 1. Propósito y pregunta de decisión
