@@ -96,6 +96,7 @@ supermercado/
 
 - [Modelo conceptual integrado](docs/modelo_conceptual.md).
 - [Registro de supuestos](docs/registro_supuestos.csv).
+- [Evidencia de verificación y corrida piloto](docs/verificacion.md).
 - [Matriz de trazabilidad](docs/matriz_trazabilidad.csv).
 - [Implementación, parámetros y alcance de las pruebas](docs/implementacion.md).
 - [Plantilla opcional de CI](docs/ci-tests.yml): pendiente de activación con permiso `workflow` en GitHub.

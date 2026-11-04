@@ -1,0 +1,577 @@
+{
+  "code_commit": "cc191f2ec21abb6f5b9ec3362ee8d1f613d32fa5",
+  "python": "3.12.3",
+  "source_sha256": "1653c6b6d796e82830a4932cd270031ab358e8e25ae9a8f955c0c887727d9de8",
+  "tests": {
+    "command": "python3 -m unittest discover -s tests -t . -v",
+    "cases": 107,
+    "result": "OK",
+    "note": "Resultado observado en la ejecución de la suite; este artefacto no sustituye volver a ejecutarla"
+  },
+  "base_run": {
+    "command": "python3 -m supermercado simular --config ejemplos/base.json --semilla 2026 --salida resultados/corrida_base",
+    "summary": {
+      "semilla": 2026,
+      "estado": "completo",
+      "dias_simulados": 7,
+      "llegados": 4765,
+      "atendidos": 4765,
+      "abandonos": 0,
+      "pagos_fallidos": 0,
+      "pendientes": 0,
+      "espera_media": 25.04821474878444,
+      "espera_media_observada": 25.04821474878444,
+      "p95_espera_global": 202.82774153017064,
+      "max_p95_franja": 267.27238088943403,
+      "max_p95_observado": 267.27238088943403,
+      "cumple_espera_semana": false,
+      "cumple_servicio_semana": false,
+      "horas_caja": 403.0914510980167,
+      "horas_cajero": 503.21706338145,
+      "horas_cajero_extra": 13.217063381450076,
+      "horas_cajero_post_cierre": 12.282837562932048,
+      "costo_personal": null,
+      "utilizacion": 0.863844500757378,
+      "area_cola": 119354.7432779578,
+      "pendientes_al_cierre": 169,
+      "max_minutos_extra": 225.3836485070483,
+      "aperturas": 131
+    },
+    "verification": {
+      "ok": true,
+      "errors": [],
+      "alcance": "Invariantes y contabilidad del programa; no validación empírica"
+    }
+  },
+  "comparison": {
+    "command": "python3 -m supermercado experimentar --config ejemplos/base.json --plan comparacion --replicas 30 --semilla 2026 --salida resultados/comparacion_30",
+    "weeks": 180,
+    "alternatives": 6,
+    "seeds": [
+      2026,
+      2027,
+      2028,
+      2029,
+      2030,
+      2031,
+      2032,
+      2033,
+      2034,
+      2035,
+      2036,
+      2037,
+      2038,
+      2039,
+      2040,
+      2041,
+      2042,
+      2043,
+      2044,
+      2045,
+      2046,
+      2047,
+      2048,
+      2049,
+      2050,
+      2051,
+      2052,
+      2053,
+      2054,
+      2055
+    ],
+    "confidence": 0.9,
+    "config_sha256": "d6ef87150e4b57d0a4a451b4ce49c2dd19d23aa0e7d2cdec8f066c508184bcda",
+    "statistics": {
+      "referencia_normal": {
+        "max_p95_franja": {
+          "n": 30,
+          "mean": 253.2697385823978,
+          "sd": 42.265248843059425,
+          "lower": 240.15835114575233,
+          "upper": 266.3811260190433,
+          "half_width": 13.111387436645462,
+          "confidence": 0.9
+        },
+        "espera_media": {
+          "n": 30,
+          "mean": 26.185286076884594,
+          "sd": 4.464381378422181,
+          "lower": 24.80036026857362,
+          "upper": 27.57021188519557,
+          "half_width": 1.3849258083109741,
+          "confidence": 0.9
+        },
+        "horas_caja": {
+          "n": 30,
+          "mean": 404.0294406089251,
+          "sd": 2.4213211945080055,
+          "lower": 403.2783062572112,
+          "upper": 404.78057496063894,
+          "half_width": 0.7511343517138419,
+          "confidence": 0.9
+        },
+        "horas_cajero": {
+          "n": 30,
+          "mean": 504.37767669854935,
+          "sd": 2.366139759698866,
+          "lower": 503.6436605512918,
+          "upper": 505.1116928458069,
+          "half_width": 0.7340161472575245,
+          "confidence": 0.9
+        },
+        "horas_cajero_extra": {
+          "n": 30,
+          "mean": 14.37767669854934,
+          "sd": 2.366139759698887,
+          "lower": 13.64366055129181,
+          "upper": 15.111692845806871,
+          "half_width": 0.7340161472575311,
+          "confidence": 0.9
+        },
+        "costo_personal": {
+          "n": 0,
+          "mean": null,
+          "sd": null,
+          "lower": null,
+          "upper": null,
+          "half_width": null,
+          "confidence": 0.9
+        },
+        "cumplimiento_semanal": {
+          "n": 30,
+          "probability": 0.0,
+          "lower": 0,
+          "upper": 0.08272430812509922,
+          "confidence": 0.9
+        },
+        "semanas_inviables": 0,
+        "alcance_intervalos_medias": "Semanas completas del escenario"
+      },
+      "referencia_rapida_exclusiva": {
+        "max_p95_franja": {
+          "n": 26,
+          "mean": 503.473620391084,
+          "sd": 49.49715586477317,
+          "lower": 486.89237192296736,
+          "upper": 520.0548688592006,
+          "half_width": 16.581248468116637,
+          "confidence": 0.9
+        },
+        "espera_media": {
+          "n": 26,
+          "mean": 49.31610921168541,
+          "sd": 5.5751810637099215,
+          "lower": 47.448457205079826,
+          "upper": 51.18376121829099,
+          "half_width": 1.8676520066055848,
+          "confidence": 0.9
+        },
+        "horas_caja": {
+          "n": 26,
+          "mean": 433.7778020287476,
+          "sd": 5.477221544134421,
+          "lower": 431.9429658699523,
+          "upper": 435.6126381875429,
+          "half_width": 1.8348361587953332,
+          "confidence": 0.9
+        },
+        "horas_cajero": {
+          "n": 26,
+          "mean": 533.9269594614647,
+          "sd": 5.486572987007828,
+          "lower": 532.0889906257486,
+          "upper": 535.7649282971807,
+          "half_width": 1.8379688357160635,
+          "confidence": 0.9
+        },
+        "horas_cajero_extra": {
+          "n": 26,
+          "mean": 43.92695946146462,
+          "sd": 5.4865729870078415,
+          "lower": 42.08899062574855,
+          "upper": 45.76492829718069,
+          "half_width": 1.8379688357160677,
+          "confidence": 0.9
+        },
+        "costo_personal": {
+          "n": 0,
+          "mean": null,
+          "sd": null,
+          "lower": null,
+          "upper": null,
+          "half_width": null,
+          "confidence": 0.9
+        },
+        "cumplimiento_semanal": {
+          "n": 30,
+          "probability": 0.0,
+          "lower": 0,
+          "upper": 0.08272430812509922,
+          "confidence": 0.9
+        },
+        "semanas_inviables": 4,
+        "alcance_intervalos_medias": "Condicional a semanas operativamente completas; no estima semanas inviables"
+      },
+      "referencia_rapida_flexible": {
+        "max_p95_franja": {
+          "n": 30,
+          "mean": 273.3155335020672,
+          "sd": 40.48034658375988,
+          "lower": 260.75785261391786,
+          "upper": 285.8732143902165,
+          "half_width": 12.55768088814934,
+          "confidence": 0.9
+        },
+        "espera_media": {
+          "n": 30,
+          "mean": 22.674053606503854,
+          "sd": 3.8852186314237684,
+          "lower": 21.468793773731434,
+          "upper": 23.879313439276274,
+          "half_width": 1.2052598327724189,
+          "confidence": 0.9
+        },
+        "horas_caja": {
+          "n": 30,
+          "mean": 404.0564838906527,
+          "sd": 2.4133366638419766,
+          "lower": 403.30782647396063,
+          "upper": 404.8051413073448,
+          "half_width": 0.7486574166920982,
+          "confidence": 0.9
+        },
+        "horas_cajero": {
+          "n": 30,
+          "mean": 504.37007528530313,
+          "sd": 2.35586277827342,
+          "lower": 503.6392472296536,
+          "upper": 505.10090334095264,
+          "half_width": 0.7308280556494857,
+          "confidence": 0.9
+        },
+        "horas_cajero_extra": {
+          "n": 30,
+          "mean": 14.370075285303127,
+          "sd": 2.355862778273425,
+          "lower": 13.63924722965364,
+          "upper": 15.100903340952614,
+          "half_width": 0.7308280556494872,
+          "confidence": 0.9
+        },
+        "costo_personal": {
+          "n": 0,
+          "mean": null,
+          "sd": null,
+          "lower": null,
+          "upper": null,
+          "half_width": null,
+          "confidence": 0.9
+        },
+        "cumplimiento_semanal": {
+          "n": 30,
+          "probability": 0.0,
+          "lower": 0,
+          "upper": 0.08272430812509922,
+          "confidence": 0.9
+        },
+        "semanas_inviables": 0,
+        "alcance_intervalos_medias": "Semanas completas del escenario"
+      },
+      "cinco_todas_franjas_normal": {
+        "max_p95_franja": {
+          "n": 30,
+          "mean": 104.16939027494391,
+          "sd": 23.773992288575336,
+          "lower": 96.79430004493524,
+          "upper": 111.54448050495257,
+          "half_width": 7.375090230008668,
+          "confidence": 0.9
+        },
+        "espera_media": {
+          "n": 30,
+          "mean": 13.150875739001432,
+          "sd": 3.041972424308087,
+          "lower": 12.207204990136443,
+          "upper": 14.09454648786642,
+          "half_width": 0.9436707488649888,
+          "confidence": 0.9
+        },
+        "horas_caja": {
+          "n": 30,
+          "mean": 475.4253867444046,
+          "sd": 1.3929754690625291,
+          "lower": 474.9932624445468,
+          "upper": 475.85751104426237,
+          "half_width": 0.4321242998577768,
+          "confidence": 0.9
+        },
+        "horas_cajero": {
+          "n": 30,
+          "mean": 494.02097083393016,
+          "sd": 1.4084992830870318,
+          "lower": 493.58403078719425,
+          "upper": 494.4579108806661,
+          "half_width": 0.43694004673591463,
+          "confidence": 0.9
+        },
+        "horas_cajero_extra": {
+          "n": 30,
+          "mean": 4.020970833930159,
+          "sd": 1.4084992830870287,
+          "lower": 3.584030787194245,
+          "upper": 4.4579108806660726,
+          "half_width": 0.43694004673591375,
+          "confidence": 0.9
+        },
+        "costo_personal": {
+          "n": 0,
+          "mean": null,
+          "sd": null,
+          "lower": null,
+          "upper": null,
+          "half_width": null,
+          "confidence": 0.9
+        },
+        "cumplimiento_semanal": {
+          "n": 30,
+          "probability": 0.0,
+          "lower": 0,
+          "upper": 0.08272430812509922,
+          "confidence": 0.9
+        },
+        "semanas_inviables": 0,
+        "alcance_intervalos_medias": "Semanas completas del escenario"
+      },
+      "cinco_todas_franjas_rapida_exclusiva": {
+        "max_p95_franja": {
+          "n": 30,
+          "mean": 173.0000304953745,
+          "sd": 30.937454780982712,
+          "lower": 163.40271433042366,
+          "upper": 182.59734666032531,
+          "half_width": 9.597316164950835,
+          "confidence": 0.9
+        },
+        "espera_media": {
+          "n": 30,
+          "mean": 19.70145347230187,
+          "sd": 3.0976220100408085,
+          "lower": 18.740519290730266,
+          "upper": 20.662387653873477,
+          "half_width": 0.9609341815716046,
+          "confidence": 0.9
+        },
+        "horas_caja": {
+          "n": 30,
+          "mean": 481.53651557308723,
+          "sd": 2.8187032949932296,
+          "lower": 480.66210664420964,
+          "upper": 482.4109245019648,
+          "half_width": 0.8744089288776138,
+          "confidence": 0.9
+        },
+        "horas_cajero": {
+          "n": 30,
+          "mean": 500.18760703644983,
+          "sd": 2.7777020125103924,
+          "lower": 499.32591739149336,
+          "upper": 501.0492966814063,
+          "half_width": 0.8616896449564899,
+          "confidence": 0.9
+        },
+        "horas_cajero_extra": {
+          "n": 30,
+          "mean": 10.187607036449807,
+          "sd": 2.7777020125103906,
+          "lower": 9.325917391493316,
+          "upper": 11.049296681406297,
+          "half_width": 0.8616896449564894,
+          "confidence": 0.9
+        },
+        "costo_personal": {
+          "n": 0,
+          "mean": null,
+          "sd": null,
+          "lower": null,
+          "upper": null,
+          "half_width": null,
+          "confidence": 0.9
+        },
+        "cumplimiento_semanal": {
+          "n": 30,
+          "probability": 0.0,
+          "lower": 0,
+          "upper": 0.08272430812509922,
+          "confidence": 0.9
+        },
+        "semanas_inviables": 0,
+        "alcance_intervalos_medias": "Semanas completas del escenario"
+      },
+      "cinco_todas_franjas_rapida_flexible": {
+        "max_p95_franja": {
+          "n": 30,
+          "mean": 114.90607959049382,
+          "sd": 26.21812884399265,
+          "lower": 106.7727773020364,
+          "upper": 123.03938187895123,
+          "half_width": 8.133302288457413,
+          "confidence": 0.9
+        },
+        "espera_media": {
+          "n": 30,
+          "mean": 11.508003369553345,
+          "sd": 2.6144969559901283,
+          "lower": 10.696942664121204,
+          "upper": 12.319064074985485,
+          "half_width": 0.8110607054321413,
+          "confidence": 0.9
+        },
+        "horas_caja": {
+          "n": 30,
+          "mean": 475.411377713179,
+          "sd": 1.3788728230098126,
+          "lower": 474.98362829011336,
+          "upper": 475.8391271362446,
+          "half_width": 0.4277494230656007,
+          "confidence": 0.9
+        },
+        "horas_cajero": {
+          "n": 30,
+          "mean": 494.01129036359447,
+          "sd": 1.3818509138927724,
+          "lower": 493.5826170869031,
+          "upper": 494.43996364028584,
+          "half_width": 0.4286732766913777,
+          "confidence": 0.9
+        },
+        "horas_cajero_extra": {
+          "n": 30,
+          "mean": 4.011290363594474,
+          "sd": 1.3818509138928097,
+          "lower": 3.582617086903085,
+          "upper": 4.439963640285864,
+          "half_width": 0.4286732766913893,
+          "confidence": 0.9
+        },
+        "costo_personal": {
+          "n": 0,
+          "mean": null,
+          "sd": null,
+          "lower": null,
+          "upper": null,
+          "half_width": null,
+          "confidence": 0.9
+        },
+        "cumplimiento_semanal": {
+          "n": 30,
+          "probability": 0.0,
+          "lower": 0,
+          "upper": 0.08272430812509922,
+          "confidence": 0.9
+        },
+        "semanas_inviables": 0,
+        "alcance_intervalos_medias": "Semanas completas del escenario"
+      }
+    },
+    "paired": {
+      "referencia_normal": {
+        "reference": "referencia_normal",
+        "metric": "max_p95_franja",
+        "difference": "alternativa menos referencia; negativo indica menor espera",
+        "excluded_seeds": [],
+        "n": 30,
+        "mean": 0.0,
+        "sd": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "half_width": 0.0,
+        "confidence": 0.9
+      },
+      "referencia_rapida_exclusiva": {
+        "reference": "referencia_normal",
+        "metric": "max_p95_franja",
+        "difference": "alternativa menos referencia; negativo indica menor espera",
+        "excluded_seeds": [
+          2034,
+          2036,
+          2037,
+          2038
+        ],
+        "n": 26,
+        "mean": 260.5803893894071,
+        "sd": 18.609148815885614,
+        "lower": 254.34643685404617,
+        "upper": 266.81434192476803,
+        "half_width": 6.23395253536093,
+        "confidence": 0.9
+      },
+      "referencia_rapida_flexible": {
+        "reference": "referencia_normal",
+        "metric": "max_p95_franja",
+        "difference": "alternativa menos referencia; negativo indica menor espera",
+        "excluded_seeds": [],
+        "n": 30,
+        "mean": 20.045794919669373,
+        "sd": 5.434213110056326,
+        "lower": 18.360011079526505,
+        "upper": 21.73157875981224,
+        "half_width": 1.6857838401428666,
+        "confidence": 0.9
+      },
+      "cinco_todas_franjas_normal": {
+        "reference": "referencia_normal",
+        "metric": "max_p95_franja",
+        "difference": "alternativa menos referencia; negativo indica menor espera",
+        "excluded_seeds": [],
+        "n": 30,
+        "mean": -149.10034830745388,
+        "sd": 24.30446978309106,
+        "lower": -156.6400015330063,
+        "upper": -141.56069508190146,
+        "half_width": 7.539653225552437,
+        "confidence": 0.9
+      },
+      "cinco_todas_franjas_rapida_exclusiva": {
+        "reference": "referencia_normal",
+        "metric": "max_p95_franja",
+        "difference": "alternativa menos referencia; negativo indica menor espera",
+        "excluded_seeds": [],
+        "n": 30,
+        "mean": -80.26970808702329,
+        "sd": 19.74049383717372,
+        "lower": -86.39353960286209,
+        "upper": -74.14587657118449,
+        "half_width": 6.123831515838799,
+        "confidence": 0.9
+      },
+      "cinco_todas_franjas_rapida_flexible": {
+        "reference": "referencia_normal",
+        "metric": "max_p95_franja",
+        "difference": "alternativa menos referencia; negativo indica menor espera",
+        "excluded_seeds": [],
+        "n": 30,
+        "mean": -138.36365899190397,
+        "sd": 23.793027134115196,
+        "lower": -145.74465414951868,
+        "upper": -130.98266383428927,
+        "half_width": 7.3809951576147155,
+        "confidence": 0.9
+      }
+    },
+    "recommendation": {
+      "target_success": null,
+      "eligible": [],
+      "selected": null,
+      "inference_scope": "Exploratorio: intervalos por alternativa, sin ajuste por selección múltiple; confirmar finalistas con nuevas réplicas",
+      "criterion": "Límite inferior Wilson >= meta, sin semanas inviables; después menor hora de cajero y de caja",
+      "reason": "Falta acordar una meta probabilística; se presentan comparaciones sin declarar ganadora"
+    }
+  },
+  "limitations": [
+    "Parámetros de ejemplo; no son observaciones reales",
+    "No existe todavía validación empírica del supermercado",
+    "Los intervalos de medias excluyen semanas inviables y declaran esa condición",
+    "La meta probabilística final no está acordada",
+    "CI automática pendiente de permiso workflow; suite local ejecutada"
+  ]
+}
