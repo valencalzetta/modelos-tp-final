@@ -51,6 +51,14 @@ def variants(config, plan, adjust_staff=False):
         for name,c in [('referencia',base),('cinco_todas_franjas',with_capacity(base,[5]*len(base.bands),adjust_staff))]:
             for mode in ('normal','rapida_exclusiva','rapida_flexible'):
                 result[f'{name}_{mode}'] = replace(c,mode=mode).validate()
+    elif plan == 'filas':
+        # Cada par sólo cambia la organización de filas. Sin cambios voluntarios;
+        # se conserva la redistribución obligatoria cuando una caja cierra.
+        for name,c in variants(config,'comparacion',adjust_staff).items():
+            for queue in ('unica','individuales'):
+                result[f'{name}_{queue}'] = replace(c,queue_mode=queue,switch_threshold=None,
+                    assumptions={**c.assumptions,'comparacion_filas':
+                        'Fila única frente a menor fila individual incluyendo ocupado; desempate por caja; sin cambios voluntarios'}).validate()
     elif plan == 'capacidad':
         for counts in product(range(1,6),repeat=len(base.bands)):
             result['cajas_'+'_'.join(map(str,counts))] = replace(with_capacity(base,counts,adjust_staff),mode='normal')
@@ -156,8 +164,10 @@ def run_experiment(config, plan, replicas, seed, output, confidence=.9,
         summaries[name] = statistics
     reference = next(iter(configs))
     pairs = {}
-    base = {r['semilla']:r['max_p95_franja'] for r in rows if r['escenario'] == reference}
     for name in configs:
+        if plan == 'filas':
+            reference = name.rsplit('_',1)[0] + '_unica'
+        base = {r['semilla']:r['max_p95_franja'] for r in rows if r['escenario'] == reference}
         other = {r['semilla']:r['max_p95_franja'] for r in rows if r['escenario'] == name}
         valid_seeds = {s for s in seeds if base[s] is not None and other[s] is not None}
         pairs[name] = dict(reference=reference,metric='max_p95_franja',

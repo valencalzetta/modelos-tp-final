@@ -24,3 +24,23 @@ Ninguna de estas alternativas cumplió el objetivo en todas las franjas de algun
 La evidencia detallada, los intervalos y las diferencias pareadas están en [el registro JSON](evidencia/prueba_integracion.json). Las trazas y CSV completos se regeneran con los comandos del README y quedan en `resultados/`, fuera de Git.
 
 La verificación acredita implementación y consistencia. Siguen pendientes datos observados, revisión de supuestos y validación empírica. La plantilla de automatización está disponible, pero su activación requiere el permiso `workflow` de GitHub.
+
+## Extra: comparación de filas
+
+Se agregó el plan `filas` y se ejecutaron doce escenarios con treinta réplicas
+cada uno: 360 semanas, semillas 2026 a 2055, confianza del 90 %. Cada una de
+las seis políticas principales se comparó con fila única e individuales,
+conservando clientes y recursos y sin cambios voluntarios de fila.
+
+En los pares completos, las filas individuales aumentaron la espera media y
+la media del máximo P95 semanal en las seis políticas. Con cinco cajas normales,
+este último indicador pasó de 104.17 a 247.46 minutos. Con rápida exclusiva
+5/4/3, las semanas inviables aumentaron de 4/30 a 24/30; sus medias no deben
+compararse directamente porque usan muestras completas distintas.
+
+El piloto respalda mantener fila única bajo las reglas ensayadas; no demuestra
+que toda variante de filas individuales sea inferior. Ningún escenario cumplió
+servicio en todas las franjas de alguna semana. La suite ampliada pasó sus
+108 tests. Diseño, tablas, diferencias pareadas y límites están en
+[el análisis extra](comparacion_filas.md), con
+[evidencia conservada](evidencia/comparacion_filas.json).

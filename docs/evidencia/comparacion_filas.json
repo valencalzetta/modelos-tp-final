@@ -1,0 +1,4553 @@
+{
+  "manifest": {
+    "python": "3.12.3",
+    "source_sha256": "f12bce98b9f2370f6be320aeb994bc6a69925af1bc7d621d59c0d8e338da412c",
+    "config_sha256": "6fd2dc66fff1d5e7eddaa68f6cc00412e5a9efdad08134f389b9a2b07f263064",
+    "seeds": [
+      2026,
+      2027,
+      2028,
+      2029,
+      2030,
+      2031,
+      2032,
+      2033,
+      2034,
+      2035,
+      2036,
+      2037,
+      2038,
+      2039,
+      2040,
+      2041,
+      2042,
+      2043,
+      2044,
+      2045,
+      2046,
+      2047,
+      2048,
+      2049,
+      2050,
+      2051,
+      2052,
+      2053,
+      2054,
+      2055
+    ],
+    "configs": {
+      "referencia_normal_unica": {
+        "bands": [
+          {
+            "name": "manana",
+            "start": 0,
+            "end": 300,
+            "rate": 1.0,
+            "boxes": 5
+          },
+          {
+            "name": "tarde",
+            "start": 300,
+            "end": 600,
+            "rate": 0.8,
+            "boxes": 4
+          },
+          {
+            "name": "noche",
+            "start": 600,
+            "end": 840,
+            "rate": 0.5,
+            "boxes": 3
+          }
+        ],
+        "installed_boxes": 5,
+        "days": 7,
+        "promotion_day": 2,
+        "promotion_multiplier": 1.4,
+        "demand_multiplier": 1.0,
+        "products_min": 1,
+        "products_max": 40,
+        "promotion_products_multiplier": 1.0,
+        "cash_fraction": 0.3,
+        "priority_fraction": 0.1,
+        "scan_minutes": 0.15,
+        "digital_payment_minutes": 1.0,
+        "cash_payment_minutes": 2.0,
+        "mode": "normal",
+        "queue_mode": "unica",
+        "quick_limit": 10,
+        "switch_threshold": null,
+        "rejection_probability": 0.0,
+        "max_payment_attempts": 1,
+        "retry_delay": 0.0,
+        "payment_exhaustion": "fallida",
+        "patience_minutes": null,
+        "sla_minutes": 10.0,
+        "hourly_wage": null,
+        "overtime_wage_multiplier": 1.0,
+        "reactive_threshold": null,
+        "reactive_extra_boxes": 1,
+        "reactive_delay": 0.0,
+        "reactive_min_open": 0.0,
+        "cashiers": [
+          {
+            "id": "M-1",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                180,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-2",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                195,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-3",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                210,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-4",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                225,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-5",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                240,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-1",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                600,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-2",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                615,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-3",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                630,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-4",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                645,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-5",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                660,
+                15
+              ]
+            ],
+            "absences": []
+          }
+        ],
+        "assumptions": {
+          "priority_fraction": "0.10 es un supuesto ilustrativo nuevo, no un dato de los bloques; revisar con el grupo.",
+          "cashiers": "Dos turnos sintéticos de siete horas con cinco cajeros cada uno y una pausa pagada de 15 minutos escalonada; no son observaciones reales ni planificación laboral validada.",
+          "costs": "hourly_wage=null; se informan horas, sin inventar salarios.",
+          "incidents": "Rechazos y abandonos desactivados en referencia, como en B3; mecanismos implementados y ensayados por tests.",
+          "overtime": "Sólo continúan los cajeros asignados al cierre; se registra su trabajo adicional.",
+          "dependencies": "Independencia condicional; promoción aumenta llegadas, no canastas en referencia.",
+          "confidence": "0.90 es una opción de análisis; la meta de semanas satisfactorias se indica por separado.",
+          "comparacion_filas": "Fila única frente a menor fila individual incluyendo ocupado; desempate por caja; sin cambios voluntarios"
+        }
+      },
+      "referencia_normal_individuales": {
+        "bands": [
+          {
+            "name": "manana",
+            "start": 0,
+            "end": 300,
+            "rate": 1.0,
+            "boxes": 5
+          },
+          {
+            "name": "tarde",
+            "start": 300,
+            "end": 600,
+            "rate": 0.8,
+            "boxes": 4
+          },
+          {
+            "name": "noche",
+            "start": 600,
+            "end": 840,
+            "rate": 0.5,
+            "boxes": 3
+          }
+        ],
+        "installed_boxes": 5,
+        "days": 7,
+        "promotion_day": 2,
+        "promotion_multiplier": 1.4,
+        "demand_multiplier": 1.0,
+        "products_min": 1,
+        "products_max": 40,
+        "promotion_products_multiplier": 1.0,
+        "cash_fraction": 0.3,
+        "priority_fraction": 0.1,
+        "scan_minutes": 0.15,
+        "digital_payment_minutes": 1.0,
+        "cash_payment_minutes": 2.0,
+        "mode": "normal",
+        "queue_mode": "individuales",
+        "quick_limit": 10,
+        "switch_threshold": null,
+        "rejection_probability": 0.0,
+        "max_payment_attempts": 1,
+        "retry_delay": 0.0,
+        "payment_exhaustion": "fallida",
+        "patience_minutes": null,
+        "sla_minutes": 10.0,
+        "hourly_wage": null,
+        "overtime_wage_multiplier": 1.0,
+        "reactive_threshold": null,
+        "reactive_extra_boxes": 1,
+        "reactive_delay": 0.0,
+        "reactive_min_open": 0.0,
+        "cashiers": [
+          {
+            "id": "M-1",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                180,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-2",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                195,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-3",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                210,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-4",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                225,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-5",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                240,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-1",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                600,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-2",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                615,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-3",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                630,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-4",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                645,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-5",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                660,
+                15
+              ]
+            ],
+            "absences": []
+          }
+        ],
+        "assumptions": {
+          "priority_fraction": "0.10 es un supuesto ilustrativo nuevo, no un dato de los bloques; revisar con el grupo.",
+          "cashiers": "Dos turnos sintéticos de siete horas con cinco cajeros cada uno y una pausa pagada de 15 minutos escalonada; no son observaciones reales ni planificación laboral validada.",
+          "costs": "hourly_wage=null; se informan horas, sin inventar salarios.",
+          "incidents": "Rechazos y abandonos desactivados en referencia, como en B3; mecanismos implementados y ensayados por tests.",
+          "overtime": "Sólo continúan los cajeros asignados al cierre; se registra su trabajo adicional.",
+          "dependencies": "Independencia condicional; promoción aumenta llegadas, no canastas en referencia.",
+          "confidence": "0.90 es una opción de análisis; la meta de semanas satisfactorias se indica por separado.",
+          "comparacion_filas": "Fila única frente a menor fila individual incluyendo ocupado; desempate por caja; sin cambios voluntarios"
+        }
+      },
+      "referencia_rapida_exclusiva_unica": {
+        "bands": [
+          {
+            "name": "manana",
+            "start": 0,
+            "end": 300,
+            "rate": 1.0,
+            "boxes": 5
+          },
+          {
+            "name": "tarde",
+            "start": 300,
+            "end": 600,
+            "rate": 0.8,
+            "boxes": 4
+          },
+          {
+            "name": "noche",
+            "start": 600,
+            "end": 840,
+            "rate": 0.5,
+            "boxes": 3
+          }
+        ],
+        "installed_boxes": 5,
+        "days": 7,
+        "promotion_day": 2,
+        "promotion_multiplier": 1.4,
+        "demand_multiplier": 1.0,
+        "products_min": 1,
+        "products_max": 40,
+        "promotion_products_multiplier": 1.0,
+        "cash_fraction": 0.3,
+        "priority_fraction": 0.1,
+        "scan_minutes": 0.15,
+        "digital_payment_minutes": 1.0,
+        "cash_payment_minutes": 2.0,
+        "mode": "rapida_exclusiva",
+        "queue_mode": "unica",
+        "quick_limit": 10,
+        "switch_threshold": null,
+        "rejection_probability": 0.0,
+        "max_payment_attempts": 1,
+        "retry_delay": 0.0,
+        "payment_exhaustion": "fallida",
+        "patience_minutes": null,
+        "sla_minutes": 10.0,
+        "hourly_wage": null,
+        "overtime_wage_multiplier": 1.0,
+        "reactive_threshold": null,
+        "reactive_extra_boxes": 1,
+        "reactive_delay": 0.0,
+        "reactive_min_open": 0.0,
+        "cashiers": [
+          {
+            "id": "M-1",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                180,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-2",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                195,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-3",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                210,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-4",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                225,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-5",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                240,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-1",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                600,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-2",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                615,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-3",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                630,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-4",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                645,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-5",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                660,
+                15
+              ]
+            ],
+            "absences": []
+          }
+        ],
+        "assumptions": {
+          "priority_fraction": "0.10 es un supuesto ilustrativo nuevo, no un dato de los bloques; revisar con el grupo.",
+          "cashiers": "Dos turnos sintéticos de siete horas con cinco cajeros cada uno y una pausa pagada de 15 minutos escalonada; no son observaciones reales ni planificación laboral validada.",
+          "costs": "hourly_wage=null; se informan horas, sin inventar salarios.",
+          "incidents": "Rechazos y abandonos desactivados en referencia, como en B3; mecanismos implementados y ensayados por tests.",
+          "overtime": "Sólo continúan los cajeros asignados al cierre; se registra su trabajo adicional.",
+          "dependencies": "Independencia condicional; promoción aumenta llegadas, no canastas en referencia.",
+          "confidence": "0.90 es una opción de análisis; la meta de semanas satisfactorias se indica por separado.",
+          "comparacion_filas": "Fila única frente a menor fila individual incluyendo ocupado; desempate por caja; sin cambios voluntarios"
+        }
+      },
+      "referencia_rapida_exclusiva_individuales": {
+        "bands": [
+          {
+            "name": "manana",
+            "start": 0,
+            "end": 300,
+            "rate": 1.0,
+            "boxes": 5
+          },
+          {
+            "name": "tarde",
+            "start": 300,
+            "end": 600,
+            "rate": 0.8,
+            "boxes": 4
+          },
+          {
+            "name": "noche",
+            "start": 600,
+            "end": 840,
+            "rate": 0.5,
+            "boxes": 3
+          }
+        ],
+        "installed_boxes": 5,
+        "days": 7,
+        "promotion_day": 2,
+        "promotion_multiplier": 1.4,
+        "demand_multiplier": 1.0,
+        "products_min": 1,
+        "products_max": 40,
+        "promotion_products_multiplier": 1.0,
+        "cash_fraction": 0.3,
+        "priority_fraction": 0.1,
+        "scan_minutes": 0.15,
+        "digital_payment_minutes": 1.0,
+        "cash_payment_minutes": 2.0,
+        "mode": "rapida_exclusiva",
+        "queue_mode": "individuales",
+        "quick_limit": 10,
+        "switch_threshold": null,
+        "rejection_probability": 0.0,
+        "max_payment_attempts": 1,
+        "retry_delay": 0.0,
+        "payment_exhaustion": "fallida",
+        "patience_minutes": null,
+        "sla_minutes": 10.0,
+        "hourly_wage": null,
+        "overtime_wage_multiplier": 1.0,
+        "reactive_threshold": null,
+        "reactive_extra_boxes": 1,
+        "reactive_delay": 0.0,
+        "reactive_min_open": 0.0,
+        "cashiers": [
+          {
+            "id": "M-1",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                180,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-2",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                195,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-3",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                210,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-4",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                225,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-5",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                240,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-1",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                600,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-2",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                615,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-3",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                630,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-4",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                645,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-5",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                660,
+                15
+              ]
+            ],
+            "absences": []
+          }
+        ],
+        "assumptions": {
+          "priority_fraction": "0.10 es un supuesto ilustrativo nuevo, no un dato de los bloques; revisar con el grupo.",
+          "cashiers": "Dos turnos sintéticos de siete horas con cinco cajeros cada uno y una pausa pagada de 15 minutos escalonada; no son observaciones reales ni planificación laboral validada.",
+          "costs": "hourly_wage=null; se informan horas, sin inventar salarios.",
+          "incidents": "Rechazos y abandonos desactivados en referencia, como en B3; mecanismos implementados y ensayados por tests.",
+          "overtime": "Sólo continúan los cajeros asignados al cierre; se registra su trabajo adicional.",
+          "dependencies": "Independencia condicional; promoción aumenta llegadas, no canastas en referencia.",
+          "confidence": "0.90 es una opción de análisis; la meta de semanas satisfactorias se indica por separado.",
+          "comparacion_filas": "Fila única frente a menor fila individual incluyendo ocupado; desempate por caja; sin cambios voluntarios"
+        }
+      },
+      "referencia_rapida_flexible_unica": {
+        "bands": [
+          {
+            "name": "manana",
+            "start": 0,
+            "end": 300,
+            "rate": 1.0,
+            "boxes": 5
+          },
+          {
+            "name": "tarde",
+            "start": 300,
+            "end": 600,
+            "rate": 0.8,
+            "boxes": 4
+          },
+          {
+            "name": "noche",
+            "start": 600,
+            "end": 840,
+            "rate": 0.5,
+            "boxes": 3
+          }
+        ],
+        "installed_boxes": 5,
+        "days": 7,
+        "promotion_day": 2,
+        "promotion_multiplier": 1.4,
+        "demand_multiplier": 1.0,
+        "products_min": 1,
+        "products_max": 40,
+        "promotion_products_multiplier": 1.0,
+        "cash_fraction": 0.3,
+        "priority_fraction": 0.1,
+        "scan_minutes": 0.15,
+        "digital_payment_minutes": 1.0,
+        "cash_payment_minutes": 2.0,
+        "mode": "rapida_flexible",
+        "queue_mode": "unica",
+        "quick_limit": 10,
+        "switch_threshold": null,
+        "rejection_probability": 0.0,
+        "max_payment_attempts": 1,
+        "retry_delay": 0.0,
+        "payment_exhaustion": "fallida",
+        "patience_minutes": null,
+        "sla_minutes": 10.0,
+        "hourly_wage": null,
+        "overtime_wage_multiplier": 1.0,
+        "reactive_threshold": null,
+        "reactive_extra_boxes": 1,
+        "reactive_delay": 0.0,
+        "reactive_min_open": 0.0,
+        "cashiers": [
+          {
+            "id": "M-1",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                180,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-2",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                195,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-3",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                210,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-4",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                225,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-5",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                240,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-1",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                600,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-2",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                615,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-3",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                630,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-4",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                645,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-5",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                660,
+                15
+              ]
+            ],
+            "absences": []
+          }
+        ],
+        "assumptions": {
+          "priority_fraction": "0.10 es un supuesto ilustrativo nuevo, no un dato de los bloques; revisar con el grupo.",
+          "cashiers": "Dos turnos sintéticos de siete horas con cinco cajeros cada uno y una pausa pagada de 15 minutos escalonada; no son observaciones reales ni planificación laboral validada.",
+          "costs": "hourly_wage=null; se informan horas, sin inventar salarios.",
+          "incidents": "Rechazos y abandonos desactivados en referencia, como en B3; mecanismos implementados y ensayados por tests.",
+          "overtime": "Sólo continúan los cajeros asignados al cierre; se registra su trabajo adicional.",
+          "dependencies": "Independencia condicional; promoción aumenta llegadas, no canastas en referencia.",
+          "confidence": "0.90 es una opción de análisis; la meta de semanas satisfactorias se indica por separado.",
+          "comparacion_filas": "Fila única frente a menor fila individual incluyendo ocupado; desempate por caja; sin cambios voluntarios"
+        }
+      },
+      "referencia_rapida_flexible_individuales": {
+        "bands": [
+          {
+            "name": "manana",
+            "start": 0,
+            "end": 300,
+            "rate": 1.0,
+            "boxes": 5
+          },
+          {
+            "name": "tarde",
+            "start": 300,
+            "end": 600,
+            "rate": 0.8,
+            "boxes": 4
+          },
+          {
+            "name": "noche",
+            "start": 600,
+            "end": 840,
+            "rate": 0.5,
+            "boxes": 3
+          }
+        ],
+        "installed_boxes": 5,
+        "days": 7,
+        "promotion_day": 2,
+        "promotion_multiplier": 1.4,
+        "demand_multiplier": 1.0,
+        "products_min": 1,
+        "products_max": 40,
+        "promotion_products_multiplier": 1.0,
+        "cash_fraction": 0.3,
+        "priority_fraction": 0.1,
+        "scan_minutes": 0.15,
+        "digital_payment_minutes": 1.0,
+        "cash_payment_minutes": 2.0,
+        "mode": "rapida_flexible",
+        "queue_mode": "individuales",
+        "quick_limit": 10,
+        "switch_threshold": null,
+        "rejection_probability": 0.0,
+        "max_payment_attempts": 1,
+        "retry_delay": 0.0,
+        "payment_exhaustion": "fallida",
+        "patience_minutes": null,
+        "sla_minutes": 10.0,
+        "hourly_wage": null,
+        "overtime_wage_multiplier": 1.0,
+        "reactive_threshold": null,
+        "reactive_extra_boxes": 1,
+        "reactive_delay": 0.0,
+        "reactive_min_open": 0.0,
+        "cashiers": [
+          {
+            "id": "M-1",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                180,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-2",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                195,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-3",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                210,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-4",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                225,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-5",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                240,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-1",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                600,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-2",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                615,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-3",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                630,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-4",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                645,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-5",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                660,
+                15
+              ]
+            ],
+            "absences": []
+          }
+        ],
+        "assumptions": {
+          "priority_fraction": "0.10 es un supuesto ilustrativo nuevo, no un dato de los bloques; revisar con el grupo.",
+          "cashiers": "Dos turnos sintéticos de siete horas con cinco cajeros cada uno y una pausa pagada de 15 minutos escalonada; no son observaciones reales ni planificación laboral validada.",
+          "costs": "hourly_wage=null; se informan horas, sin inventar salarios.",
+          "incidents": "Rechazos y abandonos desactivados en referencia, como en B3; mecanismos implementados y ensayados por tests.",
+          "overtime": "Sólo continúan los cajeros asignados al cierre; se registra su trabajo adicional.",
+          "dependencies": "Independencia condicional; promoción aumenta llegadas, no canastas en referencia.",
+          "confidence": "0.90 es una opción de análisis; la meta de semanas satisfactorias se indica por separado.",
+          "comparacion_filas": "Fila única frente a menor fila individual incluyendo ocupado; desempate por caja; sin cambios voluntarios"
+        }
+      },
+      "cinco_todas_franjas_normal_unica": {
+        "bands": [
+          {
+            "name": "manana",
+            "start": 0,
+            "end": 300,
+            "rate": 1.0,
+            "boxes": 5
+          },
+          {
+            "name": "tarde",
+            "start": 300,
+            "end": 600,
+            "rate": 0.8,
+            "boxes": 5
+          },
+          {
+            "name": "noche",
+            "start": 600,
+            "end": 840,
+            "rate": 0.5,
+            "boxes": 5
+          }
+        ],
+        "installed_boxes": 5,
+        "days": 7,
+        "promotion_day": 2,
+        "promotion_multiplier": 1.4,
+        "demand_multiplier": 1.0,
+        "products_min": 1,
+        "products_max": 40,
+        "promotion_products_multiplier": 1.0,
+        "cash_fraction": 0.3,
+        "priority_fraction": 0.1,
+        "scan_minutes": 0.15,
+        "digital_payment_minutes": 1.0,
+        "cash_payment_minutes": 2.0,
+        "mode": "normal",
+        "queue_mode": "unica",
+        "quick_limit": 10,
+        "switch_threshold": null,
+        "rejection_probability": 0.0,
+        "max_payment_attempts": 1,
+        "retry_delay": 0.0,
+        "payment_exhaustion": "fallida",
+        "patience_minutes": null,
+        "sla_minutes": 10.0,
+        "hourly_wage": null,
+        "overtime_wage_multiplier": 1.0,
+        "reactive_threshold": null,
+        "reactive_extra_boxes": 1,
+        "reactive_delay": 0.0,
+        "reactive_min_open": 0.0,
+        "cashiers": [
+          {
+            "id": "M-1",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                180,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-2",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                195,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-3",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                210,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-4",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                225,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-5",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                240,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-1",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                600,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-2",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                615,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-3",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                630,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-4",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                645,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-5",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                660,
+                15
+              ]
+            ],
+            "absences": []
+          }
+        ],
+        "assumptions": {
+          "priority_fraction": "0.10 es un supuesto ilustrativo nuevo, no un dato de los bloques; revisar con el grupo.",
+          "cashiers": "Dos turnos sintéticos de siete horas con cinco cajeros cada uno y una pausa pagada de 15 minutos escalonada; no son observaciones reales ni planificación laboral validada.",
+          "costs": "hourly_wage=null; se informan horas, sin inventar salarios.",
+          "incidents": "Rechazos y abandonos desactivados en referencia, como en B3; mecanismos implementados y ensayados por tests.",
+          "overtime": "Sólo continúan los cajeros asignados al cierre; se registra su trabajo adicional.",
+          "dependencies": "Independencia condicional; promoción aumenta llegadas, no canastas en referencia.",
+          "confidence": "0.90 es una opción de análisis; la meta de semanas satisfactorias se indica por separado.",
+          "comparacion_filas": "Fila única frente a menor fila individual incluyendo ocupado; desempate por caja; sin cambios voluntarios"
+        }
+      },
+      "cinco_todas_franjas_normal_individuales": {
+        "bands": [
+          {
+            "name": "manana",
+            "start": 0,
+            "end": 300,
+            "rate": 1.0,
+            "boxes": 5
+          },
+          {
+            "name": "tarde",
+            "start": 300,
+            "end": 600,
+            "rate": 0.8,
+            "boxes": 5
+          },
+          {
+            "name": "noche",
+            "start": 600,
+            "end": 840,
+            "rate": 0.5,
+            "boxes": 5
+          }
+        ],
+        "installed_boxes": 5,
+        "days": 7,
+        "promotion_day": 2,
+        "promotion_multiplier": 1.4,
+        "demand_multiplier": 1.0,
+        "products_min": 1,
+        "products_max": 40,
+        "promotion_products_multiplier": 1.0,
+        "cash_fraction": 0.3,
+        "priority_fraction": 0.1,
+        "scan_minutes": 0.15,
+        "digital_payment_minutes": 1.0,
+        "cash_payment_minutes": 2.0,
+        "mode": "normal",
+        "queue_mode": "individuales",
+        "quick_limit": 10,
+        "switch_threshold": null,
+        "rejection_probability": 0.0,
+        "max_payment_attempts": 1,
+        "retry_delay": 0.0,
+        "payment_exhaustion": "fallida",
+        "patience_minutes": null,
+        "sla_minutes": 10.0,
+        "hourly_wage": null,
+        "overtime_wage_multiplier": 1.0,
+        "reactive_threshold": null,
+        "reactive_extra_boxes": 1,
+        "reactive_delay": 0.0,
+        "reactive_min_open": 0.0,
+        "cashiers": [
+          {
+            "id": "M-1",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                180,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-2",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                195,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-3",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                210,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-4",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                225,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-5",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                240,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-1",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                600,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-2",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                615,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-3",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                630,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-4",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                645,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-5",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                660,
+                15
+              ]
+            ],
+            "absences": []
+          }
+        ],
+        "assumptions": {
+          "priority_fraction": "0.10 es un supuesto ilustrativo nuevo, no un dato de los bloques; revisar con el grupo.",
+          "cashiers": "Dos turnos sintéticos de siete horas con cinco cajeros cada uno y una pausa pagada de 15 minutos escalonada; no son observaciones reales ni planificación laboral validada.",
+          "costs": "hourly_wage=null; se informan horas, sin inventar salarios.",
+          "incidents": "Rechazos y abandonos desactivados en referencia, como en B3; mecanismos implementados y ensayados por tests.",
+          "overtime": "Sólo continúan los cajeros asignados al cierre; se registra su trabajo adicional.",
+          "dependencies": "Independencia condicional; promoción aumenta llegadas, no canastas en referencia.",
+          "confidence": "0.90 es una opción de análisis; la meta de semanas satisfactorias se indica por separado.",
+          "comparacion_filas": "Fila única frente a menor fila individual incluyendo ocupado; desempate por caja; sin cambios voluntarios"
+        }
+      },
+      "cinco_todas_franjas_rapida_exclusiva_unica": {
+        "bands": [
+          {
+            "name": "manana",
+            "start": 0,
+            "end": 300,
+            "rate": 1.0,
+            "boxes": 5
+          },
+          {
+            "name": "tarde",
+            "start": 300,
+            "end": 600,
+            "rate": 0.8,
+            "boxes": 5
+          },
+          {
+            "name": "noche",
+            "start": 600,
+            "end": 840,
+            "rate": 0.5,
+            "boxes": 5
+          }
+        ],
+        "installed_boxes": 5,
+        "days": 7,
+        "promotion_day": 2,
+        "promotion_multiplier": 1.4,
+        "demand_multiplier": 1.0,
+        "products_min": 1,
+        "products_max": 40,
+        "promotion_products_multiplier": 1.0,
+        "cash_fraction": 0.3,
+        "priority_fraction": 0.1,
+        "scan_minutes": 0.15,
+        "digital_payment_minutes": 1.0,
+        "cash_payment_minutes": 2.0,
+        "mode": "rapida_exclusiva",
+        "queue_mode": "unica",
+        "quick_limit": 10,
+        "switch_threshold": null,
+        "rejection_probability": 0.0,
+        "max_payment_attempts": 1,
+        "retry_delay": 0.0,
+        "payment_exhaustion": "fallida",
+        "patience_minutes": null,
+        "sla_minutes": 10.0,
+        "hourly_wage": null,
+        "overtime_wage_multiplier": 1.0,
+        "reactive_threshold": null,
+        "reactive_extra_boxes": 1,
+        "reactive_delay": 0.0,
+        "reactive_min_open": 0.0,
+        "cashiers": [
+          {
+            "id": "M-1",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                180,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-2",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                195,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-3",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                210,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-4",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                225,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-5",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                240,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-1",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                600,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-2",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                615,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-3",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                630,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-4",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                645,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-5",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                660,
+                15
+              ]
+            ],
+            "absences": []
+          }
+        ],
+        "assumptions": {
+          "priority_fraction": "0.10 es un supuesto ilustrativo nuevo, no un dato de los bloques; revisar con el grupo.",
+          "cashiers": "Dos turnos sintéticos de siete horas con cinco cajeros cada uno y una pausa pagada de 15 minutos escalonada; no son observaciones reales ni planificación laboral validada.",
+          "costs": "hourly_wage=null; se informan horas, sin inventar salarios.",
+          "incidents": "Rechazos y abandonos desactivados en referencia, como en B3; mecanismos implementados y ensayados por tests.",
+          "overtime": "Sólo continúan los cajeros asignados al cierre; se registra su trabajo adicional.",
+          "dependencies": "Independencia condicional; promoción aumenta llegadas, no canastas en referencia.",
+          "confidence": "0.90 es una opción de análisis; la meta de semanas satisfactorias se indica por separado.",
+          "comparacion_filas": "Fila única frente a menor fila individual incluyendo ocupado; desempate por caja; sin cambios voluntarios"
+        }
+      },
+      "cinco_todas_franjas_rapida_exclusiva_individuales": {
+        "bands": [
+          {
+            "name": "manana",
+            "start": 0,
+            "end": 300,
+            "rate": 1.0,
+            "boxes": 5
+          },
+          {
+            "name": "tarde",
+            "start": 300,
+            "end": 600,
+            "rate": 0.8,
+            "boxes": 5
+          },
+          {
+            "name": "noche",
+            "start": 600,
+            "end": 840,
+            "rate": 0.5,
+            "boxes": 5
+          }
+        ],
+        "installed_boxes": 5,
+        "days": 7,
+        "promotion_day": 2,
+        "promotion_multiplier": 1.4,
+        "demand_multiplier": 1.0,
+        "products_min": 1,
+        "products_max": 40,
+        "promotion_products_multiplier": 1.0,
+        "cash_fraction": 0.3,
+        "priority_fraction": 0.1,
+        "scan_minutes": 0.15,
+        "digital_payment_minutes": 1.0,
+        "cash_payment_minutes": 2.0,
+        "mode": "rapida_exclusiva",
+        "queue_mode": "individuales",
+        "quick_limit": 10,
+        "switch_threshold": null,
+        "rejection_probability": 0.0,
+        "max_payment_attempts": 1,
+        "retry_delay": 0.0,
+        "payment_exhaustion": "fallida",
+        "patience_minutes": null,
+        "sla_minutes": 10.0,
+        "hourly_wage": null,
+        "overtime_wage_multiplier": 1.0,
+        "reactive_threshold": null,
+        "reactive_extra_boxes": 1,
+        "reactive_delay": 0.0,
+        "reactive_min_open": 0.0,
+        "cashiers": [
+          {
+            "id": "M-1",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                180,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-2",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                195,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-3",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                210,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-4",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                225,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-5",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                240,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-1",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                600,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-2",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                615,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-3",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                630,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-4",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                645,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-5",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                660,
+                15
+              ]
+            ],
+            "absences": []
+          }
+        ],
+        "assumptions": {
+          "priority_fraction": "0.10 es un supuesto ilustrativo nuevo, no un dato de los bloques; revisar con el grupo.",
+          "cashiers": "Dos turnos sintéticos de siete horas con cinco cajeros cada uno y una pausa pagada de 15 minutos escalonada; no son observaciones reales ni planificación laboral validada.",
+          "costs": "hourly_wage=null; se informan horas, sin inventar salarios.",
+          "incidents": "Rechazos y abandonos desactivados en referencia, como en B3; mecanismos implementados y ensayados por tests.",
+          "overtime": "Sólo continúan los cajeros asignados al cierre; se registra su trabajo adicional.",
+          "dependencies": "Independencia condicional; promoción aumenta llegadas, no canastas en referencia.",
+          "confidence": "0.90 es una opción de análisis; la meta de semanas satisfactorias se indica por separado.",
+          "comparacion_filas": "Fila única frente a menor fila individual incluyendo ocupado; desempate por caja; sin cambios voluntarios"
+        }
+      },
+      "cinco_todas_franjas_rapida_flexible_unica": {
+        "bands": [
+          {
+            "name": "manana",
+            "start": 0,
+            "end": 300,
+            "rate": 1.0,
+            "boxes": 5
+          },
+          {
+            "name": "tarde",
+            "start": 300,
+            "end": 600,
+            "rate": 0.8,
+            "boxes": 5
+          },
+          {
+            "name": "noche",
+            "start": 600,
+            "end": 840,
+            "rate": 0.5,
+            "boxes": 5
+          }
+        ],
+        "installed_boxes": 5,
+        "days": 7,
+        "promotion_day": 2,
+        "promotion_multiplier": 1.4,
+        "demand_multiplier": 1.0,
+        "products_min": 1,
+        "products_max": 40,
+        "promotion_products_multiplier": 1.0,
+        "cash_fraction": 0.3,
+        "priority_fraction": 0.1,
+        "scan_minutes": 0.15,
+        "digital_payment_minutes": 1.0,
+        "cash_payment_minutes": 2.0,
+        "mode": "rapida_flexible",
+        "queue_mode": "unica",
+        "quick_limit": 10,
+        "switch_threshold": null,
+        "rejection_probability": 0.0,
+        "max_payment_attempts": 1,
+        "retry_delay": 0.0,
+        "payment_exhaustion": "fallida",
+        "patience_minutes": null,
+        "sla_minutes": 10.0,
+        "hourly_wage": null,
+        "overtime_wage_multiplier": 1.0,
+        "reactive_threshold": null,
+        "reactive_extra_boxes": 1,
+        "reactive_delay": 0.0,
+        "reactive_min_open": 0.0,
+        "cashiers": [
+          {
+            "id": "M-1",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                180,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-2",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                195,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-3",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                210,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-4",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                225,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-5",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                240,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-1",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                600,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-2",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                615,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-3",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                630,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-4",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                645,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-5",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                660,
+                15
+              ]
+            ],
+            "absences": []
+          }
+        ],
+        "assumptions": {
+          "priority_fraction": "0.10 es un supuesto ilustrativo nuevo, no un dato de los bloques; revisar con el grupo.",
+          "cashiers": "Dos turnos sintéticos de siete horas con cinco cajeros cada uno y una pausa pagada de 15 minutos escalonada; no son observaciones reales ni planificación laboral validada.",
+          "costs": "hourly_wage=null; se informan horas, sin inventar salarios.",
+          "incidents": "Rechazos y abandonos desactivados en referencia, como en B3; mecanismos implementados y ensayados por tests.",
+          "overtime": "Sólo continúan los cajeros asignados al cierre; se registra su trabajo adicional.",
+          "dependencies": "Independencia condicional; promoción aumenta llegadas, no canastas en referencia.",
+          "confidence": "0.90 es una opción de análisis; la meta de semanas satisfactorias se indica por separado.",
+          "comparacion_filas": "Fila única frente a menor fila individual incluyendo ocupado; desempate por caja; sin cambios voluntarios"
+        }
+      },
+      "cinco_todas_franjas_rapida_flexible_individuales": {
+        "bands": [
+          {
+            "name": "manana",
+            "start": 0,
+            "end": 300,
+            "rate": 1.0,
+            "boxes": 5
+          },
+          {
+            "name": "tarde",
+            "start": 300,
+            "end": 600,
+            "rate": 0.8,
+            "boxes": 5
+          },
+          {
+            "name": "noche",
+            "start": 600,
+            "end": 840,
+            "rate": 0.5,
+            "boxes": 5
+          }
+        ],
+        "installed_boxes": 5,
+        "days": 7,
+        "promotion_day": 2,
+        "promotion_multiplier": 1.4,
+        "demand_multiplier": 1.0,
+        "products_min": 1,
+        "products_max": 40,
+        "promotion_products_multiplier": 1.0,
+        "cash_fraction": 0.3,
+        "priority_fraction": 0.1,
+        "scan_minutes": 0.15,
+        "digital_payment_minutes": 1.0,
+        "cash_payment_minutes": 2.0,
+        "mode": "rapida_flexible",
+        "queue_mode": "individuales",
+        "quick_limit": 10,
+        "switch_threshold": null,
+        "rejection_probability": 0.0,
+        "max_payment_attempts": 1,
+        "retry_delay": 0.0,
+        "payment_exhaustion": "fallida",
+        "patience_minutes": null,
+        "sla_minutes": 10.0,
+        "hourly_wage": null,
+        "overtime_wage_multiplier": 1.0,
+        "reactive_threshold": null,
+        "reactive_extra_boxes": 1,
+        "reactive_delay": 0.0,
+        "reactive_min_open": 0.0,
+        "cashiers": [
+          {
+            "id": "M-1",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                180,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-2",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                195,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-3",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                210,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-4",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                225,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "M-5",
+            "start": 0,
+            "end": 420,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                240,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-1",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                600,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-2",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                615,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-3",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                630,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-4",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                645,
+                15
+              ]
+            ],
+            "absences": []
+          },
+          {
+            "id": "T-5",
+            "start": 420,
+            "end": 840,
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "speed": 1.0,
+            "breaks": [
+              [
+                660,
+                15
+              ]
+            ],
+            "absences": []
+          }
+        ],
+        "assumptions": {
+          "priority_fraction": "0.10 es un supuesto ilustrativo nuevo, no un dato de los bloques; revisar con el grupo.",
+          "cashiers": "Dos turnos sintéticos de siete horas con cinco cajeros cada uno y una pausa pagada de 15 minutos escalonada; no son observaciones reales ni planificación laboral validada.",
+          "costs": "hourly_wage=null; se informan horas, sin inventar salarios.",
+          "incidents": "Rechazos y abandonos desactivados en referencia, como en B3; mecanismos implementados y ensayados por tests.",
+          "overtime": "Sólo continúan los cajeros asignados al cierre; se registra su trabajo adicional.",
+          "dependencies": "Independencia condicional; promoción aumenta llegadas, no canastas en referencia.",
+          "confidence": "0.90 es una opción de análisis; la meta de semanas satisfactorias se indica por separado.",
+          "comparacion_filas": "Fila única frente a menor fila individual incluyendo ocupado; desempate por caja; sin cambios voluntarios"
+        }
+      }
+    },
+    "plan": "filas",
+    "confidence": 0.9,
+    "target_success": null,
+    "adjust_staff": false,
+    "precision": "Tamaño fijo; piloto no garantiza una precisión específica"
+  },
+  "statistics": {
+    "referencia_normal_unica": {
+      "max_p95_franja": {
+        "n": 30,
+        "mean": 253.2697385823978,
+        "sd": 42.265248843059425,
+        "lower": 240.15835114575233,
+        "upper": 266.3811260190433,
+        "half_width": 13.111387436645462,
+        "confidence": 0.9
+      },
+      "espera_media": {
+        "n": 30,
+        "mean": 26.185286076884594,
+        "sd": 4.464381378422181,
+        "lower": 24.80036026857362,
+        "upper": 27.57021188519557,
+        "half_width": 1.3849258083109741,
+        "confidence": 0.9
+      },
+      "horas_caja": {
+        "n": 30,
+        "mean": 404.0294406089251,
+        "sd": 2.4213211945080055,
+        "lower": 403.2783062572112,
+        "upper": 404.78057496063894,
+        "half_width": 0.7511343517138419,
+        "confidence": 0.9
+      },
+      "horas_cajero": {
+        "n": 30,
+        "mean": 504.37767669854935,
+        "sd": 2.366139759698866,
+        "lower": 503.6436605512918,
+        "upper": 505.1116928458069,
+        "half_width": 0.7340161472575245,
+        "confidence": 0.9
+      },
+      "horas_cajero_extra": {
+        "n": 30,
+        "mean": 14.37767669854934,
+        "sd": 2.366139759698887,
+        "lower": 13.64366055129181,
+        "upper": 15.111692845806871,
+        "half_width": 0.7340161472575311,
+        "confidence": 0.9
+      },
+      "costo_personal": {
+        "n": 0,
+        "mean": null,
+        "sd": null,
+        "lower": null,
+        "upper": null,
+        "half_width": null,
+        "confidence": 0.9
+      },
+      "cumplimiento_semanal": {
+        "n": 30,
+        "probability": 0.0,
+        "lower": 0,
+        "upper": 0.08272430812509922,
+        "confidence": 0.9
+      },
+      "semanas_inviables": 0,
+      "alcance_intervalos_medias": "Semanas completas del escenario"
+    },
+    "referencia_normal_individuales": {
+      "max_p95_franja": {
+        "n": 30,
+        "mean": 368.1081839474579,
+        "sd": 59.044627045415815,
+        "lower": 349.7915526147215,
+        "upper": 386.4248152801943,
+        "half_width": 18.316631332736367,
+        "confidence": 0.9
+      },
+      "espera_media": {
+        "n": 30,
+        "mean": 27.48845729491782,
+        "sd": 4.454155300577628,
+        "lower": 26.106703787072295,
+        "upper": 28.870210802763342,
+        "half_width": 1.3817535078455232,
+        "confidence": 0.9
+      },
+      "horas_caja": {
+        "n": 30,
+        "mean": 404.9611663435505,
+        "sd": 2.3866646015862463,
+        "lower": 404.22078304688705,
+        "upper": 405.7015496402139,
+        "half_width": 0.7403832966634252,
+        "confidence": 0.9
+      },
+      "horas_cajero": {
+        "n": 30,
+        "mean": 505.30732541012117,
+        "sd": 2.3297501332973627,
+        "lower": 504.5845979338992,
+        "upper": 506.0300528863431,
+        "half_width": 0.7227274762219761,
+        "confidence": 0.9
+      },
+      "horas_cajero_extra": {
+        "n": 30,
+        "mean": 15.307325410121177,
+        "sd": 2.329750133297359,
+        "lower": 14.584597933899202,
+        "upper": 16.030052886343153,
+        "half_width": 0.722727476221975,
+        "confidence": 0.9
+      },
+      "costo_personal": {
+        "n": 0,
+        "mean": null,
+        "sd": null,
+        "lower": null,
+        "upper": null,
+        "half_width": null,
+        "confidence": 0.9
+      },
+      "cumplimiento_semanal": {
+        "n": 30,
+        "probability": 0.0,
+        "lower": 0,
+        "upper": 0.08272430812509922,
+        "confidence": 0.9
+      },
+      "semanas_inviables": 0,
+      "alcance_intervalos_medias": "Semanas completas del escenario"
+    },
+    "referencia_rapida_exclusiva_unica": {
+      "max_p95_franja": {
+        "n": 26,
+        "mean": 503.473620391084,
+        "sd": 49.49715586477317,
+        "lower": 486.89237192296736,
+        "upper": 520.0548688592006,
+        "half_width": 16.581248468116637,
+        "confidence": 0.9
+      },
+      "espera_media": {
+        "n": 26,
+        "mean": 49.31610921168541,
+        "sd": 5.5751810637099215,
+        "lower": 47.448457205079826,
+        "upper": 51.18376121829099,
+        "half_width": 1.8676520066055848,
+        "confidence": 0.9
+      },
+      "horas_caja": {
+        "n": 26,
+        "mean": 433.7778020287476,
+        "sd": 5.477221544134421,
+        "lower": 431.9429658699523,
+        "upper": 435.6126381875429,
+        "half_width": 1.8348361587953332,
+        "confidence": 0.9
+      },
+      "horas_cajero": {
+        "n": 26,
+        "mean": 533.9269594614647,
+        "sd": 5.486572987007828,
+        "lower": 532.0889906257486,
+        "upper": 535.7649282971807,
+        "half_width": 1.8379688357160635,
+        "confidence": 0.9
+      },
+      "horas_cajero_extra": {
+        "n": 26,
+        "mean": 43.92695946146462,
+        "sd": 5.4865729870078415,
+        "lower": 42.08899062574855,
+        "upper": 45.76492829718069,
+        "half_width": 1.8379688357160677,
+        "confidence": 0.9
+      },
+      "costo_personal": {
+        "n": 0,
+        "mean": null,
+        "sd": null,
+        "lower": null,
+        "upper": null,
+        "half_width": null,
+        "confidence": 0.9
+      },
+      "cumplimiento_semanal": {
+        "n": 30,
+        "probability": 0.0,
+        "lower": 0,
+        "upper": 0.08272430812509922,
+        "confidence": 0.9
+      },
+      "semanas_inviables": 4,
+      "alcance_intervalos_medias": "Condicional a semanas operativamente completas; no estima semanas inviables"
+    },
+    "referencia_rapida_exclusiva_individuales": {
+      "max_p95_franja": {
+        "n": 6,
+        "mean": 722.7347262482838,
+        "sd": 26.66509649625242,
+        "lower": 700.7989498369524,
+        "upper": 744.6705026596152,
+        "half_width": 21.93577641133139,
+        "confidence": 0.9
+      },
+      "espera_media": {
+        "n": 6,
+        "mean": 47.576681116500595,
+        "sd": 2.3314571503424935,
+        "lower": 45.65873108134132,
+        "upper": 49.49463115165987,
+        "half_width": 1.917950035159274,
+        "confidence": 0.9
+      },
+      "horas_caja": {
+        "n": 6,
+        "mean": 438.9536789346918,
+        "sd": 4.223549232851465,
+        "lower": 435.4792181673325,
+        "upper": 442.42813970205117,
+        "half_width": 3.474460767359337,
+        "confidence": 0.9
+      },
+      "horas_cajero": {
+        "n": 6,
+        "mean": 539.0972784479758,
+        "sd": 4.250363541413773,
+        "lower": 535.6007591563831,
+        "upper": 542.5937977395685,
+        "half_width": 3.4965192915926875,
+        "confidence": 0.9
+      },
+      "horas_cajero_extra": {
+        "n": 6,
+        "mean": 49.09727844797581,
+        "sd": 4.250363541413769,
+        "lower": 45.60075915638313,
+        "upper": 52.593797739568494,
+        "half_width": 3.496519291592685,
+        "confidence": 0.9
+      },
+      "costo_personal": {
+        "n": 0,
+        "mean": null,
+        "sd": null,
+        "lower": null,
+        "upper": null,
+        "half_width": null,
+        "confidence": 0.9
+      },
+      "cumplimiento_semanal": {
+        "n": 30,
+        "probability": 0.0,
+        "lower": 0,
+        "upper": 0.08272430812509922,
+        "confidence": 0.9
+      },
+      "semanas_inviables": 24,
+      "alcance_intervalos_medias": "Condicional a semanas operativamente completas; no estima semanas inviables"
+    },
+    "referencia_rapida_flexible_unica": {
+      "max_p95_franja": {
+        "n": 30,
+        "mean": 273.3155335020672,
+        "sd": 40.48034658375988,
+        "lower": 260.75785261391786,
+        "upper": 285.8732143902165,
+        "half_width": 12.55768088814934,
+        "confidence": 0.9
+      },
+      "espera_media": {
+        "n": 30,
+        "mean": 22.674053606503854,
+        "sd": 3.8852186314237684,
+        "lower": 21.468793773731434,
+        "upper": 23.879313439276274,
+        "half_width": 1.2052598327724189,
+        "confidence": 0.9
+      },
+      "horas_caja": {
+        "n": 30,
+        "mean": 404.0564838906527,
+        "sd": 2.4133366638419766,
+        "lower": 403.30782647396063,
+        "upper": 404.8051413073448,
+        "half_width": 0.7486574166920982,
+        "confidence": 0.9
+      },
+      "horas_cajero": {
+        "n": 30,
+        "mean": 504.37007528530313,
+        "sd": 2.35586277827342,
+        "lower": 503.6392472296536,
+        "upper": 505.10090334095264,
+        "half_width": 0.7308280556494857,
+        "confidence": 0.9
+      },
+      "horas_cajero_extra": {
+        "n": 30,
+        "mean": 14.370075285303127,
+        "sd": 2.355862778273425,
+        "lower": 13.63924722965364,
+        "upper": 15.100903340952614,
+        "half_width": 0.7308280556494872,
+        "confidence": 0.9
+      },
+      "costo_personal": {
+        "n": 0,
+        "mean": null,
+        "sd": null,
+        "lower": null,
+        "upper": null,
+        "half_width": null,
+        "confidence": 0.9
+      },
+      "cumplimiento_semanal": {
+        "n": 30,
+        "probability": 0.0,
+        "lower": 0,
+        "upper": 0.08272430812509922,
+        "confidence": 0.9
+      },
+      "semanas_inviables": 0,
+      "alcance_intervalos_medias": "Semanas completas del escenario"
+    },
+    "referencia_rapida_flexible_individuales": {
+      "max_p95_franja": {
+        "n": 30,
+        "mean": 395.9575139143723,
+        "sd": 63.57760590919789,
+        "lower": 376.23467668549034,
+        "upper": 415.6803511432543,
+        "half_width": 19.722837228881982,
+        "confidence": 0.9
+      },
+      "espera_media": {
+        "n": 30,
+        "mean": 23.816768216990305,
+        "sd": 3.94527810527743,
+        "lower": 22.592876930423294,
+        "upper": 25.040659503557315,
+        "half_width": 1.2238912865670117,
+        "confidence": 0.9
+      },
+      "horas_caja": {
+        "n": 30,
+        "mean": 405.16955941420593,
+        "sd": 2.464368498810847,
+        "lower": 404.4050710683653,
+        "upper": 405.93404776004655,
+        "half_width": 0.7644883458406366,
+        "confidence": 0.9
+      },
+      "horas_cajero": {
+        "n": 30,
+        "mean": 505.49339590396016,
+        "sd": 2.4028692636663553,
+        "lower": 504.74798564995876,
+        "upper": 506.23880615796156,
+        "half_width": 0.7454102540013829,
+        "confidence": 0.9
+      },
+      "horas_cajero_extra": {
+        "n": 30,
+        "mean": 15.493395903960144,
+        "sd": 2.4028692636663513,
+        "lower": 14.747985649958762,
+        "upper": 16.238806157961527,
+        "half_width": 0.7454102540013818,
+        "confidence": 0.9
+      },
+      "costo_personal": {
+        "n": 0,
+        "mean": null,
+        "sd": null,
+        "lower": null,
+        "upper": null,
+        "half_width": null,
+        "confidence": 0.9
+      },
+      "cumplimiento_semanal": {
+        "n": 30,
+        "probability": 0.0,
+        "lower": 0,
+        "upper": 0.08272430812509922,
+        "confidence": 0.9
+      },
+      "semanas_inviables": 0,
+      "alcance_intervalos_medias": "Semanas completas del escenario"
+    },
+    "cinco_todas_franjas_normal_unica": {
+      "max_p95_franja": {
+        "n": 30,
+        "mean": 104.16939027494391,
+        "sd": 23.773992288575336,
+        "lower": 96.79430004493524,
+        "upper": 111.54448050495257,
+        "half_width": 7.375090230008668,
+        "confidence": 0.9
+      },
+      "espera_media": {
+        "n": 30,
+        "mean": 13.150875739001432,
+        "sd": 3.041972424308087,
+        "lower": 12.207204990136443,
+        "upper": 14.09454648786642,
+        "half_width": 0.9436707488649888,
+        "confidence": 0.9
+      },
+      "horas_caja": {
+        "n": 30,
+        "mean": 475.4253867444046,
+        "sd": 1.3929754690625291,
+        "lower": 474.9932624445468,
+        "upper": 475.85751104426237,
+        "half_width": 0.4321242998577768,
+        "confidence": 0.9
+      },
+      "horas_cajero": {
+        "n": 30,
+        "mean": 494.02097083393016,
+        "sd": 1.4084992830870318,
+        "lower": 493.58403078719425,
+        "upper": 494.4579108806661,
+        "half_width": 0.43694004673591463,
+        "confidence": 0.9
+      },
+      "horas_cajero_extra": {
+        "n": 30,
+        "mean": 4.020970833930159,
+        "sd": 1.4084992830870287,
+        "lower": 3.584030787194245,
+        "upper": 4.4579108806660726,
+        "half_width": 0.43694004673591375,
+        "confidence": 0.9
+      },
+      "costo_personal": {
+        "n": 0,
+        "mean": null,
+        "sd": null,
+        "lower": null,
+        "upper": null,
+        "half_width": null,
+        "confidence": 0.9
+      },
+      "cumplimiento_semanal": {
+        "n": 30,
+        "probability": 0.0,
+        "lower": 0,
+        "upper": 0.08272430812509922,
+        "confidence": 0.9
+      },
+      "semanas_inviables": 0,
+      "alcance_intervalos_medias": "Semanas completas del escenario"
+    },
+    "cinco_todas_franjas_normal_individuales": {
+      "max_p95_franja": {
+        "n": 30,
+        "mean": 247.45726288584203,
+        "sd": 41.81358677419602,
+        "lower": 234.4859885808451,
+        "upper": 260.428537190839,
+        "half_width": 12.971274304996944,
+        "confidence": 0.9
+      },
+      "espera_media": {
+        "n": 30,
+        "mean": 14.115700383435364,
+        "sd": 3.0476564733757106,
+        "lower": 13.170266347435565,
+        "upper": 15.061134419435163,
+        "half_width": 0.945434035999799,
+        "confidence": 0.9
+      },
+      "horas_caja": {
+        "n": 30,
+        "mean": 475.89788813489105,
+        "sd": 1.7731619843687831,
+        "lower": 475.34782361613435,
+        "upper": 476.44795265364775,
+        "half_width": 0.5500645187567129,
+        "confidence": 0.9
+      },
+      "horas_cajero": {
+        "n": 30,
+        "mean": 494.52143880600056,
+        "sd": 1.7431484161075994,
+        "lower": 493.9806849983505,
+        "upper": 495.0621926136506,
+        "half_width": 0.5407538076500585,
+        "confidence": 0.9
+      },
+      "horas_cajero_extra": {
+        "n": 30,
+        "mean": 4.521438806000578,
+        "sd": 1.7431484161076054,
+        "lower": 3.980684998350518,
+        "upper": 5.062192613650638,
+        "half_width": 0.5407538076500604,
+        "confidence": 0.9
+      },
+      "costo_personal": {
+        "n": 0,
+        "mean": null,
+        "sd": null,
+        "lower": null,
+        "upper": null,
+        "half_width": null,
+        "confidence": 0.9
+      },
+      "cumplimiento_semanal": {
+        "n": 30,
+        "probability": 0.0,
+        "lower": 0,
+        "upper": 0.08272430812509922,
+        "confidence": 0.9
+      },
+      "semanas_inviables": 0,
+      "alcance_intervalos_medias": "Semanas completas del escenario"
+    },
+    "cinco_todas_franjas_rapida_exclusiva_unica": {
+      "max_p95_franja": {
+        "n": 30,
+        "mean": 173.0000304953745,
+        "sd": 30.937454780982712,
+        "lower": 163.40271433042366,
+        "upper": 182.59734666032531,
+        "half_width": 9.597316164950835,
+        "confidence": 0.9
+      },
+      "espera_media": {
+        "n": 30,
+        "mean": 19.70145347230187,
+        "sd": 3.0976220100408085,
+        "lower": 18.740519290730266,
+        "upper": 20.662387653873477,
+        "half_width": 0.9609341815716046,
+        "confidence": 0.9
+      },
+      "horas_caja": {
+        "n": 30,
+        "mean": 481.53651557308723,
+        "sd": 2.8187032949932296,
+        "lower": 480.66210664420964,
+        "upper": 482.4109245019648,
+        "half_width": 0.8744089288776138,
+        "confidence": 0.9
+      },
+      "horas_cajero": {
+        "n": 30,
+        "mean": 500.18760703644983,
+        "sd": 2.7777020125103924,
+        "lower": 499.32591739149336,
+        "upper": 501.0492966814063,
+        "half_width": 0.8616896449564899,
+        "confidence": 0.9
+      },
+      "horas_cajero_extra": {
+        "n": 30,
+        "mean": 10.187607036449807,
+        "sd": 2.7777020125103906,
+        "lower": 9.325917391493316,
+        "upper": 11.049296681406297,
+        "half_width": 0.8616896449564894,
+        "confidence": 0.9
+      },
+      "costo_personal": {
+        "n": 0,
+        "mean": null,
+        "sd": null,
+        "lower": null,
+        "upper": null,
+        "half_width": null,
+        "confidence": 0.9
+      },
+      "cumplimiento_semanal": {
+        "n": 30,
+        "probability": 0.0,
+        "lower": 0,
+        "upper": 0.08272430812509922,
+        "confidence": 0.9
+      },
+      "semanas_inviables": 0,
+      "alcance_intervalos_medias": "Semanas completas del escenario"
+    },
+    "cinco_todas_franjas_rapida_exclusiva_individuales": {
+      "max_p95_franja": {
+        "n": 30,
+        "mean": 337.0965391717266,
+        "sd": 57.33992338131566,
+        "lower": 319.30873544125234,
+        "upper": 354.88434290220084,
+        "half_width": 17.787803730474266,
+        "confidence": 0.9
+      },
+      "espera_media": {
+        "n": 30,
+        "mean": 20.863499675968345,
+        "sd": 3.0921775772207285,
+        "lower": 19.904254448561943,
+        "upper": 21.822744903374748,
+        "half_width": 0.9592452274064008,
+        "confidence": 0.9
+      },
+      "horas_caja": {
+        "n": 30,
+        "mean": 484.03609461651007,
+        "sd": 4.510750359942114,
+        "lower": 482.6367843742163,
+        "upper": 485.43540485880385,
+        "half_width": 1.399310242293795,
+        "confidence": 0.9
+      },
+      "horas_cajero": {
+        "n": 30,
+        "mean": 502.7176573195496,
+        "sd": 4.528801210285518,
+        "lower": 501.3127474014254,
+        "upper": 504.12256723767376,
+        "half_width": 1.404909918124218,
+        "confidence": 0.9
+      },
+      "horas_cajero_extra": {
+        "n": 30,
+        "mean": 12.717657319549541,
+        "sd": 4.528801210285522,
+        "lower": 11.312747401425323,
+        "upper": 14.12256723767376,
+        "half_width": 1.404909918124219,
+        "confidence": 0.9
+      },
+      "costo_personal": {
+        "n": 0,
+        "mean": null,
+        "sd": null,
+        "lower": null,
+        "upper": null,
+        "half_width": null,
+        "confidence": 0.9
+      },
+      "cumplimiento_semanal": {
+        "n": 30,
+        "probability": 0.0,
+        "lower": 0,
+        "upper": 0.08272430812509922,
+        "confidence": 0.9
+      },
+      "semanas_inviables": 0,
+      "alcance_intervalos_medias": "Semanas completas del escenario"
+    },
+    "cinco_todas_franjas_rapida_flexible_unica": {
+      "max_p95_franja": {
+        "n": 30,
+        "mean": 114.90607959049382,
+        "sd": 26.21812884399265,
+        "lower": 106.7727773020364,
+        "upper": 123.03938187895123,
+        "half_width": 8.133302288457413,
+        "confidence": 0.9
+      },
+      "espera_media": {
+        "n": 30,
+        "mean": 11.508003369553345,
+        "sd": 2.6144969559901283,
+        "lower": 10.696942664121204,
+        "upper": 12.319064074985485,
+        "half_width": 0.8110607054321413,
+        "confidence": 0.9
+      },
+      "horas_caja": {
+        "n": 30,
+        "mean": 475.411377713179,
+        "sd": 1.3788728230098126,
+        "lower": 474.98362829011336,
+        "upper": 475.8391271362446,
+        "half_width": 0.4277494230656007,
+        "confidence": 0.9
+      },
+      "horas_cajero": {
+        "n": 30,
+        "mean": 494.01129036359447,
+        "sd": 1.3818509138927724,
+        "lower": 493.5826170869031,
+        "upper": 494.43996364028584,
+        "half_width": 0.4286732766913777,
+        "confidence": 0.9
+      },
+      "horas_cajero_extra": {
+        "n": 30,
+        "mean": 4.011290363594474,
+        "sd": 1.3818509138928097,
+        "lower": 3.582617086903085,
+        "upper": 4.439963640285864,
+        "half_width": 0.4286732766913893,
+        "confidence": 0.9
+      },
+      "costo_personal": {
+        "n": 0,
+        "mean": null,
+        "sd": null,
+        "lower": null,
+        "upper": null,
+        "half_width": null,
+        "confidence": 0.9
+      },
+      "cumplimiento_semanal": {
+        "n": 30,
+        "probability": 0.0,
+        "lower": 0,
+        "upper": 0.08272430812509922,
+        "confidence": 0.9
+      },
+      "semanas_inviables": 0,
+      "alcance_intervalos_medias": "Semanas completas del escenario"
+    },
+    "cinco_todas_franjas_rapida_flexible_individuales": {
+      "max_p95_franja": {
+        "n": 30,
+        "mean": 242.9956341503011,
+        "sd": 54.92744045408112,
+        "lower": 225.95622299313732,
+        "upper": 260.0350453074649,
+        "half_width": 17.039411157163794,
+        "confidence": 0.9
+      },
+      "espera_media": {
+        "n": 30,
+        "mean": 12.260327778029177,
+        "sd": 2.709933729912438,
+        "lower": 11.419660988335108,
+        "upper": 13.100994567723246,
+        "half_width": 0.8406667896940686,
+        "confidence": 0.9
+      },
+      "horas_caja": {
+        "n": 30,
+        "mean": 475.74116583353054,
+        "sd": 1.6419738273607196,
+        "lower": 475.2317980763147,
+        "upper": 476.2505335907464,
+        "half_width": 0.5093677572158269,
+        "confidence": 0.9
+      },
+      "horas_cajero": {
+        "n": 30,
+        "mean": 494.36798016324104,
+        "sd": 1.641954330672705,
+        "lower": 493.8586184542241,
+        "upper": 494.877341872258,
+        "half_width": 0.509361709016957,
+        "confidence": 0.9
+      },
+      "horas_cajero_extra": {
+        "n": 30,
+        "mean": 4.367980163241048,
+        "sd": 1.6419543306727042,
+        "lower": 3.8586184542240916,
+        "upper": 4.877341872258005,
+        "half_width": 0.5093617090169568,
+        "confidence": 0.9
+      },
+      "costo_personal": {
+        "n": 0,
+        "mean": null,
+        "sd": null,
+        "lower": null,
+        "upper": null,
+        "half_width": null,
+        "confidence": 0.9
+      },
+      "cumplimiento_semanal": {
+        "n": 30,
+        "probability": 0.0,
+        "lower": 0,
+        "upper": 0.08272430812509922,
+        "confidence": 0.9
+      },
+      "semanas_inviables": 0,
+      "alcance_intervalos_medias": "Semanas completas del escenario"
+    }
+  },
+  "paired_max_p95": {
+    "referencia_normal_unica": {
+      "reference": "referencia_normal_unica",
+      "metric": "max_p95_franja",
+      "difference": "alternativa menos referencia; negativo indica menor espera",
+      "excluded_seeds": [],
+      "n": 30,
+      "mean": 0.0,
+      "sd": 0.0,
+      "lower": 0.0,
+      "upper": 0.0,
+      "half_width": 0.0,
+      "confidence": 0.9
+    },
+    "referencia_normal_individuales": {
+      "reference": "referencia_normal_unica",
+      "metric": "max_p95_franja",
+      "difference": "alternativa menos referencia; negativo indica menor espera",
+      "excluded_seeds": [],
+      "n": 30,
+      "mean": 114.83844536506012,
+      "sd": 21.783952151873713,
+      "lower": 108.08069888579232,
+      "upper": 121.59619184432793,
+      "half_width": 6.757746479267813,
+      "confidence": 0.9
+    },
+    "referencia_rapida_exclusiva_unica": {
+      "reference": "referencia_rapida_exclusiva_unica",
+      "metric": "max_p95_franja",
+      "difference": "alternativa menos referencia; negativo indica menor espera",
+      "excluded_seeds": [
+        2034,
+        2036,
+        2037,
+        2038
+      ],
+      "n": 26,
+      "mean": 0.0,
+      "sd": 0.0,
+      "lower": 0.0,
+      "upper": 0.0,
+      "half_width": 0.0,
+      "confidence": 0.9
+    },
+    "referencia_rapida_exclusiva_individuales": {
+      "reference": "referencia_rapida_exclusiva_unica",
+      "metric": "max_p95_franja",
+      "difference": "alternativa menos referencia; negativo indica menor espera",
+      "excluded_seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030,
+        2031,
+        2032,
+        2033,
+        2034,
+        2036,
+        2037,
+        2038,
+        2039,
+        2041,
+        2043,
+        2044,
+        2045,
+        2046,
+        2047,
+        2049,
+        2050,
+        2051,
+        2053,
+        2055
+      ],
+      "n": 6,
+      "mean": 280.56975385505433,
+      "sd": 31.69975059581789,
+      "lower": 254.49226932532247,
+      "upper": 306.6472383847862,
+      "half_width": 26.077484529731876,
+      "confidence": 0.9
+    },
+    "referencia_rapida_flexible_unica": {
+      "reference": "referencia_rapida_flexible_unica",
+      "metric": "max_p95_franja",
+      "difference": "alternativa menos referencia; negativo indica menor espera",
+      "excluded_seeds": [],
+      "n": 30,
+      "mean": 0.0,
+      "sd": 0.0,
+      "lower": 0.0,
+      "upper": 0.0,
+      "half_width": 0.0,
+      "confidence": 0.9
+    },
+    "referencia_rapida_flexible_individuales": {
+      "reference": "referencia_rapida_flexible_unica",
+      "metric": "max_p95_franja",
+      "difference": "alternativa menos referencia; negativo indica menor espera",
+      "excluded_seeds": [],
+      "n": 30,
+      "mean": 122.64198041230516,
+      "sd": 27.82481942675529,
+      "lower": 114.0102558195184,
+      "upper": 131.27370500509193,
+      "half_width": 8.631724592786753,
+      "confidence": 0.9
+    },
+    "cinco_todas_franjas_normal_unica": {
+      "reference": "cinco_todas_franjas_normal_unica",
+      "metric": "max_p95_franja",
+      "difference": "alternativa menos referencia; negativo indica menor espera",
+      "excluded_seeds": [],
+      "n": 30,
+      "mean": 0.0,
+      "sd": 0.0,
+      "lower": 0.0,
+      "upper": 0.0,
+      "half_width": 0.0,
+      "confidence": 0.9
+    },
+    "cinco_todas_franjas_normal_individuales": {
+      "reference": "cinco_todas_franjas_normal_unica",
+      "metric": "max_p95_franja",
+      "difference": "alternativa menos referencia; negativo indica menor espera",
+      "excluded_seeds": [],
+      "n": 30,
+      "mean": 143.28787261089812,
+      "sd": 21.985222042054804,
+      "lower": 136.4676888437465,
+      "upper": 150.10805637804975,
+      "half_width": 6.820183767151633,
+      "confidence": 0.9
+    },
+    "cinco_todas_franjas_rapida_exclusiva_unica": {
+      "reference": "cinco_todas_franjas_rapida_exclusiva_unica",
+      "metric": "max_p95_franja",
+      "difference": "alternativa menos referencia; negativo indica menor espera",
+      "excluded_seeds": [],
+      "n": 30,
+      "mean": 0.0,
+      "sd": 0.0,
+      "lower": 0.0,
+      "upper": 0.0,
+      "half_width": 0.0,
+      "confidence": 0.9
+    },
+    "cinco_todas_franjas_rapida_exclusiva_individuales": {
+      "reference": "cinco_todas_franjas_rapida_exclusiva_unica",
+      "metric": "max_p95_franja",
+      "difference": "alternativa menos referencia; negativo indica menor espera",
+      "excluded_seeds": [],
+      "n": 30,
+      "mean": 164.09650867635207,
+      "sd": 31.96498813685513,
+      "lower": 154.18043447018053,
+      "upper": 174.01258288252362,
+      "half_width": 9.916074206171553,
+      "confidence": 0.9
+    },
+    "cinco_todas_franjas_rapida_flexible_unica": {
+      "reference": "cinco_todas_franjas_rapida_flexible_unica",
+      "metric": "max_p95_franja",
+      "difference": "alternativa menos referencia; negativo indica menor espera",
+      "excluded_seeds": [],
+      "n": 30,
+      "mean": 0.0,
+      "sd": 0.0,
+      "lower": 0.0,
+      "upper": 0.0,
+      "half_width": 0.0,
+      "confidence": 0.9
+    },
+    "cinco_todas_franjas_rapida_flexible_individuales": {
+      "reference": "cinco_todas_franjas_rapida_flexible_unica",
+      "metric": "max_p95_franja",
+      "difference": "alternativa menos referencia; negativo indica menor espera",
+      "excluded_seeds": [],
+      "n": 30,
+      "mean": 128.08955455980728,
+      "sd": 33.750890208698664,
+      "lower": 117.6194636465581,
+      "upper": 138.55964547305646,
+      "half_width": 10.470090913249182,
+      "confidence": 0.9
+    }
+  },
+  "paired_mean_wait": {
+    "referencia_normal_individuales": {
+      "reference": "referencia_normal_unica",
+      "metric": "espera_media",
+      "difference": "individuales menos unica",
+      "excluded_seeds": [],
+      "n": 30,
+      "mean": 1.3031712180332222,
+      "sd": 0.25808358073141036,
+      "lower": 1.2231093726488205,
+      "upper": 1.383233063417624,
+      "half_width": 0.08006184538440174,
+      "confidence": 0.9
+    },
+    "referencia_rapida_exclusiva_individuales": {
+      "reference": "referencia_rapida_exclusiva_unica",
+      "metric": "espera_media",
+      "difference": "individuales menos unica",
+      "excluded_seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030,
+        2031,
+        2032,
+        2033,
+        2034,
+        2036,
+        2037,
+        2038,
+        2039,
+        2041,
+        2043,
+        2044,
+        2045,
+        2046,
+        2047,
+        2049,
+        2050,
+        2051,
+        2053,
+        2055
+      ],
+      "n": 6,
+      "mean": 3.2012770165718862,
+      "sd": 1.0046343048012045,
+      "lower": 2.374824598206561,
+      "upper": 4.0277294349372115,
+      "half_width": 0.826452418365325,
+      "confidence": 0.9
+    },
+    "referencia_rapida_flexible_individuales": {
+      "reference": "referencia_rapida_flexible_unica",
+      "metric": "espera_media",
+      "difference": "individuales menos unica",
+      "excluded_seeds": [],
+      "n": 30,
+      "mean": 1.1427146104864523,
+      "sd": 0.2751869375747543,
+      "lower": 1.0573470176102289,
+      "upper": 1.2280822033626757,
+      "half_width": 0.08536759287622349,
+      "confidence": 0.9
+    },
+    "cinco_todas_franjas_normal_individuales": {
+      "reference": "cinco_todas_franjas_normal_unica",
+      "metric": "espera_media",
+      "difference": "individuales menos unica",
+      "excluded_seeds": [],
+      "n": 30,
+      "mean": 0.9648246444339323,
+      "sd": 0.20946336004682928,
+      "lower": 0.8998456050923355,
+      "upper": 1.0298036837755293,
+      "half_width": 0.06497903934159692,
+      "confidence": 0.9
+    },
+    "cinco_todas_franjas_rapida_exclusiva_individuales": {
+      "reference": "cinco_todas_franjas_rapida_exclusiva_unica",
+      "metric": "espera_media",
+      "difference": "individuales menos unica",
+      "excluded_seeds": [],
+      "n": 30,
+      "mean": 1.1620462036664747,
+      "sd": 0.3720134908630719,
+      "lower": 1.0466413937131156,
+      "upper": 1.2774510136198338,
+      "half_width": 0.11540480995335907,
+      "confidence": 0.9
+    },
+    "cinco_todas_franjas_rapida_flexible_individuales": {
+      "reference": "cinco_todas_franjas_rapida_flexible_unica",
+      "metric": "espera_media",
+      "difference": "individuales menos unica",
+      "excluded_seeds": [],
+      "n": 30,
+      "mean": 0.7523244084758324,
+      "sd": 0.21402588074038623,
+      "lower": 0.6859299988681554,
+      "upper": 0.8187188180835093,
+      "half_width": 0.06639440960767691,
+      "confidence": 0.9
+    }
+  }
+}

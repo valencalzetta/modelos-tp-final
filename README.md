@@ -24,6 +24,19 @@ Comparación de seis políticas, treinta semanas por política, con entradas com
 python3 -m supermercado experimentar --config ejemplos/base.json --plan comparacion --replicas 30 --semilla 2026 --salida resultados/comparacion_30
 ```
 
+Extra: fila única frente a filas individuales para las mismas seis políticas
+(doce escenarios, treinta semanas por escenario):
+
+```bash
+python3 -m supermercado experimentar --config ejemplos/base.json --plan filas --replicas 30 --semilla 2026 --salida resultados/filas_30
+```
+
+Se conservan clientes, personal y capacidad dentro de cada par. Las filas individuales
+eligen la menor longitud incluyendo al ocupado, sin cambios voluntarios; al cerrar
+una caja se redistribuyen sus clientes. Las diferencias pareadas comparan cada
+escenario con su equivalente de fila única. El análisis se documenta en
+[el estudio extra de filas](docs/comparacion_filas.md).
+
 Ayuda:
 
 ```bash
@@ -57,6 +70,7 @@ En referencia no hay rechazos ni abandono, como en B3. Sus mecanismos sí están
 | Plan | Diseño |
 |---|---|
 | `comparacion` | Referencia y cinco cajas toda la jornada, cada una con normales, rápida exclusiva y rápida flexible |
+| `filas` | Extra: las seis políticas anteriores con fila única e individuales; diferencias contra la fila única de la misma política |
 | `capacidad` | Las 125 políticas de 1 a 5 cajas en las tres franjas, todas normales |
 | `factorial` | 3 niveles de capacidad × 3 aumentos de promoción × 3 modalidades = 27 combinaciones |
 | `sensibilidad` | Demanda, escaneo, efectivo, promoción, límite rápido e interacción demanda-escaneo |

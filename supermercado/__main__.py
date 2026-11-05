@@ -18,7 +18,7 @@ def main(argv=None):
         sub.add_argument('--salida',required=True)
         sub.add_argument('--prioritarios',type=float,help='Supuesto explícito que reemplaza priority_fraction')
     once.add_argument('--sin-traza',action='store_true')
-    experiment.add_argument('--plan',choices=['comparacion','capacidad','factorial','sensibilidad','estres'],default='comparacion')
+    experiment.add_argument('--plan',choices=['comparacion','filas','capacidad','factorial','sensibilidad','estres'],default='comparacion')
     experiment.add_argument('--replicas',type=int,default=30)
     experiment.add_argument('--confianza',type=float,default=.90)
     experiment.add_argument('--meta-cumplimiento',type=float)

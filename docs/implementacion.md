@@ -58,6 +58,18 @@ En fila única una normal puede atender cualquier cliente, incluida una compra p
 
 En filas individuales se elige la fila habilitada de menor longitud, contando al cliente en atención, y se desempata por número de caja. La prioridad actúa dentro de la fila. La rápida flexible puede tomar clientes de otras filas cuando no tiene elegibles en la propia. Los cambios obligatorios por cierre y los voluntarios habilitados se contabilizan. Esta es una regla de comportamiento propuesta, no una observación real del supermercado.
 
+El plan extra `filas` cruza las seis políticas de `comparacion` con ambas
+organizaciones de filas (doce escenarios). Mantiene los mismos clientes y agendas
+por semilla. Desactiva los cambios voluntarios en ambas variantes, aunque el archivo
+de entrada los habilite, y conserva la redistribución por cierre. Cada diferencia
+pareada usa como referencia la fila única con la misma capacidad y modalidad de
+caja. No compara una rápida individual con una configuración normal de fila única.
+La prioridad en individuales es local a cada fila; en fila única es global. El
+experimento compara estas reglas completas de operación, sin suponer que la única
+diferencia sea la espera detrás de una compra larga. La rápida flexible conserva
+su mecanismo de tomar clientes de otras filas y por tanto permite esa excepción
+al aislamiento de las filas.
+
 ## 5. Entradas comunes y escenarios
 
 Las semillas se derivan con SHA-256 y no con `hash()` de Python, que cambia entre procesos. Hay flujos separados por día, franja y mecanismo: llegadas, productos, pagos y prioridad. Los sorteos de rechazo se identifican por semilla, cliente e intento. Cambiar la política o el orden de atención no cambia esos sorteos.

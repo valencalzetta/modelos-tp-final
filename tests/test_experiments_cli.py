@@ -8,6 +8,7 @@ import unittest
 from supermercado.__main__ import main
 from supermercado.config import Config,Band,Cashier
 from supermercado.experiments import variants,run_once,run_experiment,source_digest
+from supermercado.randomness import generate_day
 from .helpers import model
 
 
@@ -27,6 +28,27 @@ class ExperimentTests(unittest.TestCase):
         cases=variants(c,'capacidad')
         self.assertEqual(len(cases),125)
         self.assertTrue(all(1 <= b.boxes <= 5 for c in cases.values() for b in c.bands))
+
+    def test_queue_comparison_keeps_inputs_and_pairs_matching_policies(self):
+        c=replace(self.small(),queue_mode='individuales',switch_threshold=2)
+        cases=variants(c,'filas')
+        self.assertEqual(len(cases),12)
+        for name,individual in cases.items():
+            if not name.endswith('_individuales'):
+                continue
+            unique=cases[name.removesuffix('_individuales')+'_unica']
+            self.assertEqual(individual.cashiers,unique.cashiers)
+            self.assertEqual(individual.bands,unique.bands)
+            self.assertEqual(individual.mode,unique.mode)
+            self.assertIsNone(individual.switch_threshold)
+            self.assertIsNone(unique.switch_threshold)
+            self.assertEqual(generate_day(individual,123,0),generate_day(unique,123,0))
+        with tempfile.TemporaryDirectory() as temp:
+            run_experiment(c,'filas',2,123,temp)
+            pairs=json.loads((Path(temp)/'comparaciones_pareadas.json').read_text())
+            for name,pair in pairs.items():
+                self.assertEqual(pair['reference'],name.rsplit('_',1)[0]+'_unica')
+                self.assertEqual(pair['n']+len(pair['excluded_seeds']),2)
 
     def test_factorial_has_27_combinations(self):
         self.assertEqual(len(variants(self.small(),'factorial')),27)
